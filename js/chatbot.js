@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('applyLanguage function not found. Chatbot language may not be initialized correctly.');
     }
 
+    // Re-run Lucide to render icons inside the newly injected HTML
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
     /* ── Open / Close with CSS animation ──────────────── */
     chatbotToggle.addEventListener('click', () => {
         const isOpen = chatbotWindow.classList.contains('open');
