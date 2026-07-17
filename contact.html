@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre Contact | Ever After Events</title>
+    <meta name="description" content="Contactez Ever After Events pour organiser votre mariage de rêve. Remplissez notre formulaire RSVP exclusif et réservez votre consultation privée.">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="has-hero-video">
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Ever After Events - Page d'accueil">
+                <span class="logo-main">Ever After</span>
+                <span class="logo-sub">Events</span>
+            </a>
+            
+            <nav role="navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li style="margin-top: 2rem;">
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+            </li>
+        </ul>
+    </div>
+
+    <main id="main-content">
+        <!-- Subpage Header Banner -->
+        <section class="subpage-hero" style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg') center/cover no-repeat;">
+            <div class="container">
+                <p class="editorial-subtitle" style="color: var(--color-gold);">Consultation Privée</p>
+                <h1 class="editorial-title" style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;">Concevons Votre Histoire</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;">Notre conciergerie est à votre disposition pour imaginer les contours de votre futur événement. Remplissez notre formulaire RSVP exclusif.</p>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Faire Défiler</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Contact Layout (Form and Information Channels) -->
+        <section class="contact-section" aria-label="Informations et formulaire de contact">
+            <div class="container">
+                <div class="contact-layout">
+                    
+                    <!-- RSVP Inquiry Form -->
+                    <div class="rsvp-form-container">
+                        <h2 class="rsvp-title">Votre Projet de Célébration</h2>
+                        <p class="rsvp-subtitle">Merci de nous confier vos aspirations. Un membre de notre équipe vous contactera sous 24 heures.</p>
+                        
+                        <form class="rsvp-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Votre demande VIP a été enregistrée. Ever After Events vous remercie.');">
+                            
+                            <!-- Nom -->
+                            <div class="rsvp-input-group">
+                                <input type="text" id="fullname" name="fullname" class="rsvp-input" placeholder=" " required>
+                                <label for="fullname" class="rsvp-label">Nom Complet</label>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="rsvp-input-group">
+                                <input type="email" id="email" name="email" class="rsvp-input" placeholder=" " required>
+                                <label for="email" class="rsvp-label">Adresse Email</label>
+                            </div>
+
+                            <!-- Téléphone -->
+                            <div class="rsvp-input-group">
+                                <input type="tel" id="phone" name="phone" class="rsvp-input" placeholder=" " required>
+                                <label for="phone" class="rsvp-label">Téléphone</label>
+                            </div>
+
+                            <!-- Date de l'événement -->
+                            <div class="rsvp-input-group">
+                                <input type="text" id="eventdate" name="eventdate" class="rsvp-input" placeholder=" " onfocus="this.type='date'" onblur="if(!this.value) this.type='text'">
+                                <label for="eventdate" class="rsvp-label">Date Souhaitée</label>
+                            </div>
+
+                            <!-- Nombre d'invités -->
+                            <div class="rsvp-input-group select-wrapper">
+                                <select id="guests" name="guests" class="rsvp-input" required>
+                                    <option value="" disabled selected hidden> </option>
+                                    <option value="intime">Mariage Intime (Moins de 50)</option>
+                                    <option value="moyen">Prestige (50 à 150)</option>
+                                    <option value="grand">Grandeur (Plus de 150)</option>
+                                </select>
+                                <label for="guests" class="rsvp-label">Nombre d'Invités</label>
+                            </div>
+
+                            <!-- Lieu envisagé -->
+                            <div class="rsvp-input-group">
+                                <input type="text" id="location" name="location" class="rsvp-input" placeholder=" ">
+                                <label for="location" class="rsvp-label">Lieu Envisagé (Ville, Pays)</label>
+                            </div>
+
+                            <!-- Service recherché -->
+                            <div class="rsvp-input-group select-wrapper form-group-full">
+                                <select id="service" name="service" class="rsvp-input" required>
+                                    <option value="" disabled selected hidden> </option>
+                                    <option value="absolu">L'Absolu (Organisation A-Z)</option>
+                                    <option value="decor">L'Esthétique (Scénographie & Design)</option>
+                                    <option value="jourj">Le Jour J (Coordination finale)</option>
+                                </select>
+                                <label for="service" class="rsvp-label">Prestation Souhaitée</label>
+                            </div>
+
+                            <!-- Rêves et inspirations -->
+                            <div class="rsvp-input-group form-group-full">
+                                <textarea id="message" name="message" class="rsvp-input" rows="4" placeholder=" " style="resize: none;"></textarea>
+                                <label for="message" class="rsvp-label">Décrivez-nous vos envies les plus folles...</label>
+                            </div>
+
+                            <div class="form-group-full" style="margin-top: 1rem;">
+                                <button type="submit" class="btn-primary" style="width: 100%;">Envoyer l'invitation <span class="btn-icon">→</span></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Direct VIP Channels & Hours -->
+                    <div class="contact-info-panel">
+                        <h3>Conciergerie</h3>
+                        
+                        <div class="contact-channels">
+                            <!-- Channel 1: VIP Line -->
+                            <div class="channel-card">
+                                <div class="channel-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="channel-title">VIP Direct</h4>
+                                    <div class="channel-value">+33 1 40 00 00 00</div>
+                                </div>
+                            </div>
+
+                            <!-- Channel 2: Mail -->
+                            <div class="channel-card">
+                                <div class="channel-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <h4 class="channel-title">Adresse Email</h4>
+                                    <div class="channel-value">conciergerie@everafterevents.com</div>
+                                </div>
+                            </div>
+
+                            <!-- Channel 3: WhatsApp -->
+                            <div class="channel-card">
+                                <div class="channel-icon" style="color: #25D366; border-color: rgba(37,211,102,0.2);">
+                                    <i data-lucide="message-circle"></i>
+                                </div>
+                                <div>
+                                    <h4 class="channel-title" style="color: #25D366;">WhatsApp VIP</h4>
+                                    <div class="channel-value">
+                                        <a href="https://wa.me/33140000000" class="whatsapp-link" target="_blank" rel="noopener noreferrer">Lancer la discussion</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Consultation hours -->
+                        <div class="consultation-hours" style="border-top: 1px solid var(--color-border); padding-top: 2rem; margin-bottom: 2rem;">
+                            <h4 style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); font-weight: 600; margin-bottom: 1rem;">Disponibilités</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--color-dark);">Uniquement sur rendez-vous privé.</p>
+                            <p style="font-size: 0.9rem; color: var(--color-gray);">Du Lundi au Samedi : 09h00 - 19h00</p>
+                        </div>
+
+                        <div class="social-connect">
+                            <h4>Nous suivre</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link-item">Instagram</a>
+                                <a href="#" class="social-link-item">Pinterest</a>
+                                <a href="#" class="social-link-item">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Styled Grayscale Map Layout -->
+                <div class="styled-map-container" style="margin-top: 8rem; border-radius: 20px; overflow: hidden; border: 1px solid var(--color-border); height: 450px; position: relative;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.565780517865!2d2.3272449156746813!3d48.867499979288414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3bf739a857%3A0xe104cf5e282d8d85!2sPlace%20Vend%C3%B4me%2C%2075001%20Paris!5e0!3m2!1sfr!2sfr!4v1626442900000!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Localisation de l'agence Ever After Events à Place Vendôme, Paris"
+                    ></iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
+                        <span class="logo-sub">Events</span>
+                    </a>
+                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col-links">
+                    <h4>L'Agence</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html">Notre Histoire</a></li>
+                        <li><a href="about.html#values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html">Nos Mariages</a></li>
+                        <li><a href="contact.html">Prendre Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor">Scénographie</a></li>
+                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-contact">
+                    <h4>Conciergerie</h4>
+                    <div class="footer-contact-info">
+                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
+                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
+                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Cookies</a>
+                    <a href="#">Plan du site</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

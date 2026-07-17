@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Agence | Ever After Events</title>
+    <meta name="description" content="Découvrez l'histoire de l'agence Ever After Events, notre vision du luxe événementiel, nos valeurs et l'équipe qui orchestre vos plus beaux jours.">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="has-hero-video">
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Ever After Events - Page d'accueil">
+                <span class="logo-main">Ever After</span>
+                <span class="logo-sub">Events</span>
+            </a>
+            
+            <nav role="navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li style="margin-top: 2rem;">
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+            </li>
+        </ul>
+    </div>
+
+    <main id="main-content">
+        <!-- Subpage Header Banner -->
+        <section class="subpage-hero" style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/1200x/23/f4/b1/23f4b12bd43b24394a6418203f5874bf.jpg') center/cover no-repeat;">
+            <div class="container">
+                <p class="editorial-subtitle" style="color: var(--color-gold);">Notre ADN</p>
+                <h1 class="editorial-title" style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;">L'Art de l'Éphémère</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;">Découvrez l'âme créative d'Ever After Events, des artisans passionnés dévoués à la réalisation de vos moments sacrés.</p>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Faire Défiler</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Storytelling Section -->
+        <section class="agency-story" aria-label="Notre Histoire">
+            <div class="container">
+                <div class="editorial-grid">
+                    <div class="editorial-img-wrapper">
+                        <img src="images/founder.png" alt="Portrait de la fondatrice, directrice artistique et wedding planner senior">
+                    </div>
+                    <div class="editorial-content-block">
+                        <p class="editorial-subtitle">La Fondatrice</p>
+                        <h3>Une quête perpétuelle de l'émerveillement</h3>
+                        <p>Fondée par Hélène de Valois, Ever After Events est née d'un constat simple : les plus belles célébrations ne sont pas seulement spectaculaires visuellement, elles résonnent profondément dans les cœurs. Hélène a réuni autour d'elle une équipe d'artistes floraux, de designers d'espace et de logisticiens aguerris.</p>
+                        <blockquote style="font-family: var(--font-serif); font-size: 1.4rem; font-style: italic; border-left: 2px solid var(--color-gold); padding-left: 1.5rem; margin: 1.5rem 0; color: var(--color-dark);">
+                            "Nous n'organisons pas des fêtes. Nous érigeons des temples d'émotion éphémères où chaque heure vécue devient une relique dans l'histoire d'une famille."
+                        </blockquote>
+                        <p>Aujourd'hui, l'agence intervient en Europe et aux Caraïbes, cultivant des liens forts avec des artisans locaux d'exception pour garantir à sa clientèle VIP une authenticité absolue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="agency-values" id="values" style="background-color: var(--color-bg-beige);">
+            <div class="container">
+                <p class="editorial-subtitle">Nos Piliers</p>
+                <h2 class="editorial-title">Ce Qui Nous Guide</h2>
+                
+                <div class="services-grid" style="margin-top: 4rem;">
+                    <!-- Value 1 -->
+                    <div class="service-card" style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Discrétion Absolue</h3>
+                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;">Nous accompagnons des familles royales, célébrités et entrepreneurs prestigieux. La confidentialité et la protection de votre vie privée sont nos priorités absolues.</p>
+                    </div>
+
+                    <!-- Value 2 -->
+                    <div class="service-card" style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
+                            <i data-lucide="eye"></i>
+                        </div>
+                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Exigence Obsessionnelle</h3>
+                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;">De l'alignement des verres en cristal à la seconde près du lancer de pétales, nous chassons la moindre imperfection pour garantir une exécution d'orfèvre.</p>
+                    </div>
+
+                    <!-- Value 3 -->
+                    <div class="service-card" style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Audace Créative</h3>
+                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;">Nous refusons le prêt-à-penser. Chaque mariage est un concept unique élaboré à partir de votre histoire, réinventant les codes du design classique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agency History Timeline Section -->
+        <section class="method-section" style="background-color: var(--color-bg-light);">
+            <div class="container">
+                <p class="editorial-subtitle">L'Évolution</p>
+                <h2 class="editorial-title">Notre Parcours</h2>
+                
+                <div class="method-timeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <span class="step-num">2018</span>
+                        <h3 class="step-title">Création de la Maison</h3>
+                        <p class="step-desc">Hélène de Valois lance l'agence à Paris avec l'ambition de dépoussiérer l'organisation événementielle classique grâce à une vision résolument éditoriale.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <span class="step-num">2020</span>
+                        <h3 class="step-title">Expansion Destination Wedding</h3>
+                        <p class="step-desc">L'agence ouvre son bureau en Italie pour orchestrer ses premiers mariages d'exception au Lac de Côme et en Toscane pour une clientèle internationale exigeante.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <span class="step-num">2023</span>
+                        <h3 class="step-title">Reconnaissance de l'Industrie</h3>
+                        <p class="step-desc">Élue parmi les meilleures agences de Wedding Planner de luxe par des magazines de mode prestigieux, saluant notre approche sur mesure d'exception.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <span class="step-num">2026</span>
+                        <h3 class="step-title">Le Présent & L'Avenir</h3>
+                        <p class="step-desc">Une équipe internationale unie par la même passion pour l'art de recevoir, concevant des réceptions éternelles dans les plus beaux écrins du monde.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="contact-banner" style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
+            <div class="container">
+                <p class="editorial-subtitle">Planifions Ensemble</p>
+                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);">Donnez Vie à Vos Plus Beaux Moments</h2>
+                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;">Initier la Planification</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
+                        <span class="logo-sub">Events</span>
+                    </a>
+                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col-links">
+                    <h4>L'Agence</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html">Notre Histoire</a></li>
+                        <li><a href="about.html#values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html">Nos Mariages</a></li>
+                        <li><a href="contact.html">Prendre Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor">Scénographie</a></li>
+                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-contact">
+                    <h4>Conciergerie</h4>
+                    <div class="footer-contact-info">
+                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
+                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
+                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Cookies</a>
+                    <a href="#">Plan du site</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

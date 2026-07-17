@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ever After Events | Wedding Planner & Décorateur de Luxe</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme en France et à l'international. Faites l'expérience du luxe absolu et de la sérénité.">
+    <meta name="keywords" content="wedding planner luxe, organisateur mariage prestige, decoration mariage haut de gamme, coordination jour j, ever after events">
+    <meta name="author" content="Ever After Events">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.everafterevents.com/">
+    <meta property="og:title" content="Ever After Events | Wedding Planner & Décorateur de Luxe">
+    <meta property="og:description" content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme en France et à l'international. Faites l'expérience du luxe absolu.">
+    <meta property="og:image" content="images/hero_fallback.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.everafterevents.com/">
+    <meta property="twitter:title" content="Ever After Events | Wedding Planner & Décorateur de Luxe">
+    <meta property="twitter:description" content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme.">
+    <meta property="twitter:image" content="images/hero_fallback.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <!-- Schema.org JSON-LD (SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ever After Events",
+      "image": "images/hero_fallback.png",
+      "description": "Agence de Wedding Planner et Décoration de luxe spécialisée dans les mariages de prestige en France et à l'étranger.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Place Vendôme",
+        "addressLocality": "Paris",
+        "postalCode": "75001",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.8675,
+        "longitude": 2.3294
+      },
+      "telephone": "+33140000000",
+      "priceRange": "$$$$"
+    }
+    </script>
+</head>
+<body class="has-hero-video">
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Ever After Events - Page d'accueil">
+                <span class="logo-main">Ever After</span>
+                <span class="logo-sub">Events</span>
+            </a>
+            
+            <nav role="navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li style="margin-top: 2rem;">
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+            </li>
+        </ul>
+    </div>
+
+    <main id="main-content">
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section" aria-label="Présentation cinématique">
+            <div class="hero-video-container">
+                <!-- Hero: Ultra-romantic wedding reception (Royal Luxury Events) -->
+                <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" id="heroVideo">
+                    <source src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4" type="video/mp4">
+                    <source src="https://v1.pinimg.com/videos/iht/hls/8d/db/a4/8ddba44943a92792f645bde6e4670ed0.m3u8" type="application/x-mpegURL">
+                </video>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+                    Wedding Planner & Design de Prestige
+                </div>
+                <h1 class="hero-title">Créateurs d'Instants Éternels</h1>
+                <p class="hero-subtitle">Nous concevons et orchestrons des mariages d'exception et des réceptions exclusives dans les lieux les plus somptueux de la planète.</p>
+                <div class="hero-ctas">
+                    <a href="portfolio.html" class="btn-primary">Découvrir nos mariages <span class="btn-icon">→</span></a>
+                    <a href="contact.html" class="btn-secondary">Réserver une consultation</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Faire Défiler</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- 2. BRAND STATEMENT -->
+        <section class="brand-intro" aria-label="Notre philosophie">
+            <div class="container">
+                <p class="editorial-subtitle">L'Art de Recevoir</p>
+                <h2 class="brand-statement-text">
+                    "Chaque détail a une âme. Nous croyons que le luxe réside dans l'harmonie invisible des moments parfaits, là où l'émotion rencontre la perfection absolue."
+                </h2>
+            </div>
+        </section>
+
+        <!-- 3. DETAILED ABOUT TEASER -->
+        <section class="about-teaser-section" style="padding-top: 0;">
+            <div class="container">
+                <div class="editorial-grid">
+                    <div class="editorial-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" alt="Dîner romantique de mariage en plein air sous les étoiles de Provence" loading="lazy">
+                    </div>
+                    <div class="editorial-content-block">
+                        <p class="editorial-subtitle">Une Signature Unique</p>
+                        <h3>L'orchestration de votre rêve le plus audacieux</h3>
+                        <p>Chez Ever After Events, nous transcendons la simple planification d'événements. Nous façonnons des expériences sensorielles immersives. Notre approche est celle d'une maison de haute couture : entièrement personnalisée, méticuleuse et d'une discrétion absolue.</p>
+                        <p>Des falaises romantiques d'Amalfi aux châteaux grandioses de la vallée de la Loire, nous donnons vie à vos désirs les plus extraordinaires avec une sérénité inégalée.</p>
+                        <a href="about.html" class="btn-secondary">Découvrir l'Agence</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. STATS SECTION -->
+        <section class="stats-section" aria-label="Nos accomplissements">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150" data-suffix="+">0</div>
+                        <div class="stat-label">Mariages Orchestrés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="12" data-suffix="">0</div>
+                        <div class="stat-label">Destinations Insolites</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98" data-suffix="%">0</div>
+                        <div class="stat-label">Taux de Recommandation</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                        <div class="stat-label">Sérénité Garantie</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SERVICES SECTION -->
+        <section class="services-section" aria-label="Nos Prestations">
+            <div class="container">
+                <p class="editorial-subtitle">Nos Domaines d'Expertise</p>
+                <h2 class="editorial-title">Une Offre d'Exception</h2>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <div class="service-card-img">
+                            <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg" alt="Robe de mariée luxueuse et préparatifs élégants" loading="lazy">
+                        </div>
+                        <div class="service-card-content">
+                            <h3 class="service-card-title">L'Absolu</h3>
+                            <p class="service-card-desc">Organisation totale et sur-mesure de A à Z. De la recherche du lieu idéal à la gestion du budget et à la logistique complexe.</p>
+                            <a href="services.html" class="btn-secondary">En savoir plus <span class="btn-icon">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-card-img">
+                            <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" alt="Arche florale féerique et décoration de réception" loading="lazy">
+                        </div>
+                        <div class="service-card-content">
+                            <h3 class="service-card-title">L'Esthétique</h3>
+                            <p class="service-card-desc">Conception visuelle et scénographie complète. Décoration florale, éclairage d'ambiance et art de la table pour sublimer votre univers.</p>
+                            <a href="services.html" class="btn-secondary">En savoir plus <span class="btn-icon">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <div class="service-card-img">
+                            <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg" alt="Cérémonie de mariage en plein air dans un jardin fleuri" loading="lazy">
+                        </div>
+                        <div class="service-card-content">
+                            <h3 class="service-card-title">Le Jour J</h3>
+                            <p class="service-card-desc">Coordination minutieuse du jour le plus important. Gestion des prestataires, respect du timing et discrétion pour une sérénité totale.</p>
+                            <a href="services.html" class="btn-secondary">En savoir plus <span class="btn-icon">→</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PORTFOLIO TEASER (Masonry) -->
+        <section class="gallery-section" aria-label="Aperçu du Portfolio">
+            <div class="container">
+                <p class="editorial-subtitle">Réalisations Signées</p>
+                <h2 class="editorial-title">Histoires Singulières</h2>
+                
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Tous nos mariages</button>
+                    <button class="filter-btn" data-filter="chateau">Intérieur & Prestige</button>
+                    <button class="filter-btn" data-filter="exterieur">Extérieur & Nature</button>
+                </div>
+
+                <div class="masonry-grid">
+                    <!-- Item 1: First look, romantic moment -->
+                    <div class="gallery-item size-medium" data-category="chateau">
+                        <img src="https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg" alt="Premier regard émouvant entre les mariés" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-item-title">Le Premier Regard</h3>
+                            <span class="gallery-item-tag">Moment Éternel</span>
+                        </div>
+                    </div>
+                    <!-- Item 2: Outdoor wedding garden setup -->
+                    <div class="gallery-item size-large" data-category="exterieur">
+                        <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg" alt="Cérémonie en plein air avec arche blanche florale dans un jardin" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-item-title">Cérémonie en Plein Air</h3>
+                            <span class="gallery-item-tag">Jardin & Nature</span>
+                        </div>
+                    </div>
+                    <!-- Item 3: Wedding reception hall -->
+                    <div class="gallery-item size-medium" data-category="chateau">
+                        <img src="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" alt="Salle de réception de mariage ultra-romantique décorée avec soin" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-item-title">Réception d'Exception</h3>
+                            <span class="gallery-item-tag">Prestige & Élégance</span>
+                        </div>
+                    </div>
+                    <!-- Item 4: Outdoor Provence dinner -->
+                    <div class="gallery-item size-large" data-category="exterieur">
+                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" alt="Dîner de mariage en plein air sous les étoiles de Provence" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-item-title">Dîner Provençal</h3>
+                            <span class="gallery-item-tag">Provence, France</span>
+                        </div>
+                    </div>
+                    <!-- Item 5: Floral arch -->
+                    <div class="gallery-item size-medium" data-category="chateau">
+                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" alt="Arche florale sublime pour la pièce montée" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-item-title">L'Arche en Fleurs</h3>
+                            <span class="gallery-item-tag">Décoration Florale</span>
+                        </div>
+                    </div>
+                    <!-- Item 6: Couple dance -->
+                    <div class="gallery-item size-medium" data-category="exterieur">
+                        <img src="https://i.pinimg.com/736x/71/fd/d8/71fdd8e1ba632b78c8df686ba32b7426.jpg" alt="Ouverture de bal du couple de mariés" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-item-title">Ouverture de Bal</h3>
+                            <span class="gallery-item-tag">Danse & Célébration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="portfolio.html" class="btn-primary">Voir toute la galerie</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CINEMATIC VIDEO AMBIANCE SECTION -->
+        <section class="video-ambiance-section" aria-label="Ambiance Vidéo">
+            <div class="container">
+                <p class="editorial-subtitle">Instants Capturés</p>
+                <h2 class="editorial-title">Vivez la Magie</h2>
+                <p class="editorial-description">Plongez dans l'émotion de nos mariages à travers ces instants filmés avec amour.</p>
+            </div>
+            <div class="video-strip">
+                <!-- Video 1: Wedding dance entrance -->
+                <div class="video-strip-item">
+                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg" class="strip-video">
+                        <source src="https://v1.pinimg.com/videos/mc/720p/fd/2c/7e/fd2c7eb7bb7c38d00f7ab72f9bcec3e4.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-strip-label">Entrée de la Mariée</div>
+                </div>
+                <!-- Video 2: Outdoor Provence dinner -->
+                <div class="video-strip-item">
+                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" class="strip-video">
+                        <source src="https://v1.pinimg.com/videos/mc/720p/02/09/6a/02096a17f7af8ba4ad68ac999a42dbf6.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-strip-label">Dîner sous les Étoiles</div>
+                </div>
+                <!-- Video 3: Floral arch cake moment -->
+                <div class="video-strip-item">
+                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" class="strip-video">
+                        <source src="https://v1.pinimg.com/videos/iht/expMp4/df/4a/f0/df4af081e6573895fb16932172b5c432_720w.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-strip-label">L'Arche Florale</div>
+                </div>
+                <!-- Video 4: Ultra-romantic reception -->
+                <div class="video-strip-item">
+                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" class="strip-video">
+                        <source src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-strip-label">Réception de Rêve</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. REVIEWS SECTION (Swiper Slider) -->
+        <section class="reviews-section" aria-label="Avis Clients">
+            <div class="container">
+                <p class="editorial-subtitle">Témoignages</p>
+                <h2 class="editorial-title">Mots Doux</h2>
+                
+                <div class="reviews-carousel swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide review-slide">
+                            <blockquote class="review-quote">
+                                "Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout était au-delà de nos rêves les plus fous. L'équipe a su gérer chaque imprévu avec une grâce absolue."
+                            </blockquote>
+                            <div class="review-author">
+                                <img src="images/founder.png" alt="Portrait de Sophie" class="review-avatar">
+                                <span class="review-name">Sophie & Julien</span>
+                                <span class="review-location">Château de Vaux-le-Vicomte, Paris</span>
+                                <div class="review-stars" aria-label="Note de 5 étoiles sur 5">
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide review-slide">
+                            <blockquote class="review-quote">
+                                "Un sens du design extraordinaire, une coordination d'une précision chirurgicale, et pourtant, une douceur et une sérénité rassurantes tout au long de la planification. Magique."
+                            </blockquote>
+                            <div class="review-author">
+                                <img src="images/founder.png" alt="Portrait de Amara" class="review-avatar">
+                                <span class="review-name">Amara & David</span>
+                                <span class="review-location">Villa d'Este, Lac de Côme</span>
+                                <div class="review-stars" aria-label="Note de 5 étoiles sur 5">
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                    <i data-lucide="star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Buttons -->
+                    <button class="swiper-nav-btn swiper-nav-prev" aria-label="Avis précédent">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button class="swiper-nav-btn swiper-nav-next" aria-label="Avis suivant">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. HIGH-END CTA SECTION -->
+        <section class="contact-banner" style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
+            <div class="container">
+                <p class="editorial-subtitle">Votre Voyage Commence Ici</p>
+                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);">Créons Ensemble Votre Plus Belle Histoire</h2>
+                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;">Commencer l'expérience</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal container -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Agrandissement de l'image">
+        <button class="lightbox-close" aria-label="Fermer la vue agrandie">×</button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
+                        <span class="logo-sub">Events</span>
+                    </a>
+                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col-links">
+                    <h4>L'Agence</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="about.html">Notre Histoire</a></li>
+                        <li><a href="about.html#values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html">Nos Mariages</a></li>
+                        <li><a href="contact.html">Prendre Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor">Scénographie</a></li>
+                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-contact">
+                    <h4>Conciergerie</h4>
+                    <div class="footer-contact-info">
+                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
+                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
+                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Cookies</a>
+                    <a href="#">Plan du site</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
