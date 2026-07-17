@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Agence | Ever After Events</title>
-    <meta name="description" content="Découvrez l'histoire de l'agence Ever After Events, notre vision du luxe événementiel, nos valeurs et l'équipe qui orchestre vos plus beaux jours.">
-    
+    <meta name="description"
+        content="Découvrez l'histoire de l'agence Ever After Events, notre vision du luxe événementiel, nos valeurs et l'équipe qui orchestre vos plus beaux jours.">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 </head>
+
 <body class="has-hero-video">
 
     <!-- Header Navigation -->
@@ -20,19 +25,21 @@
                 <span class="logo-main">Ever After</span>
                 <span class="logo-sub">Events</span>
             </a>
-            
+
             <nav role="navigation">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="about.html" class="nav-link">À Propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
 
             <div class="header-cta">
-                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </div>
 
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
@@ -46,28 +53,38 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="index.html" class="mobile-nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-fr="Services" data-en="Services">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+            </li>
+            <li><a href="about.html" class="mobile-nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
             <li style="margin-top: 2rem;">
-                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;" data-fr="Prendre RDV"
+                    data-en="Book an Appt">Prendre RDV</a>
             </li>
         </ul>
     </div>
 
     <main id="main-content">
         <!-- Subpage Header Banner -->
-        <section class="subpage-hero" style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/1200x/23/f4/b1/23f4b12bd43b24394a6418203f5874bf.jpg') center/cover no-repeat;">
+        <section class="subpage-hero"
+            style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/1200x/23/f4/b1/23f4b12bd43b24394a6418203f5874bf.jpg') center/cover no-repeat;">
             <div class="container">
-                <p class="editorial-subtitle" style="color: var(--color-gold);">Notre ADN</p>
-                <h1 class="editorial-title" style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;">L'Art de l'Éphémère</h1>
-                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;">Découvrez l'âme créative d'Ever After Events, des artisans passionnés dévoués à la réalisation de vos moments sacrés.</p>
+                <p class="editorial-subtitle" style="color: var(--color-gold);" data-fr="Notre ADN" data-en="Our DNA">
+                    Notre ADN</p>
+                <h1 class="editorial-title"
+                    style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;"
+                    data-fr="L'Art de l'Éphémère" data-en="The Art of the Ephemeral">L'Art de l'Éphémère</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;"
+                    data-fr="Découvrez l'âme créative d'Ever After Events, des artisans passionnés dévoués à la réalisation de vos moments sacrés."
+                    data-en="Discover the creative soul of Ever After Events, passionate artisans dedicated to bringing your sacred moments to life.">
+                    Découvrez l'âme créative d'Ever After Events, des artisans passionnés dévoués à la réalisation de
+                    vos moments sacrés.</p>
             </div>
-            
+
             <div class="scroll-indicator">
-                <span>Faire Défiler</span>
+                <span data-fr="Faire Défiler" data-en="Scroll Down">Faire Défiler</span>
                 <div class="scroll-line"></div>
             </div>
         </section>
@@ -77,16 +94,33 @@
             <div class="container">
                 <div class="editorial-grid">
                     <div class="editorial-img-wrapper">
-                        <img src="images/founder.png" alt="Portrait de la fondatrice, directrice artistique et wedding planner senior">
+                        <img src="images/founder.png"
+                            alt="Portrait de la fondatrice, directrice artistique et wedding planner senior">
                     </div>
                     <div class="editorial-content-block">
-                        <p class="editorial-subtitle">La Fondatrice</p>
-                        <h3>Une quête perpétuelle de l'émerveillement</h3>
-                        <p>Fondée par Hélène de Valois, Ever After Events est née d'un constat simple : les plus belles célébrations ne sont pas seulement spectaculaires visuellement, elles résonnent profondément dans les cœurs. Hélène a réuni autour d'elle une équipe d'artistes floraux, de designers d'espace et de logisticiens aguerris.</p>
-                        <blockquote style="font-family: var(--font-serif); font-size: 1.4rem; font-style: italic; border-left: 2px solid var(--color-gold); padding-left: 1.5rem; margin: 1.5rem 0; color: var(--color-dark);">
-                            "Nous n'organisons pas des fêtes. Nous érigeons des temples d'émotion éphémères où chaque heure vécue devient une relique dans l'histoire d'une famille."
+                        <p class="editorial-subtitle" data-fr="La Fondatrice" data-en="The Founder">La Fondatrice</p>
+                        <h3 data-fr="Une quête perpétuelle de l'émerveillement" data-en="A Perpetual Quest for Wonder">
+                            Une quête perpétuelle de l'émerveillement</h3>
+                        <p data-fr="Fondée par Hélène de Valois, Ever After Events est née d'un constat simple : les plus belles célébrations ne sont pas seulement spectaculaires visuellement, elles résonnent profondément dans les cœurs. Hélène a réuni autour d'elle une équipe d'artistes floraux, de designers d'espace et de logisticiens aguerris."
+                            data-en="Founded by Hélène de Valois, Ever After Events was born from a simple observation: the most beautiful celebrations are not only visually spectacular, they resonate deeply in the heart. Hélène assembled a team of floral artists, spatial designers, and seasoned logisticians.">
+                            Fondée par Hélène de Valois, Ever After Events est née d'un constat simple : les plus belles
+                            célébrations ne sont pas seulement spectaculaires visuellement, elles résonnent profondément
+                            dans les cœurs. Hélène a réuni autour d'elle une équipe d'artistes floraux, de designers
+                            d'espace et de logisticiens aguerris.</p>
+                        <blockquote
+                            style="font-family: var(--font-serif); font-size: 1.4rem; font-style: italic; border-left: 2px solid var(--color-gold); padding-left: 1.5rem; margin: 1.5rem 0; color: var(--color-dark);"
+                            data-fr='"Nous n\' organisons pas des fêtes. Nous érigeons des temples d\'émotion éphémères
+                            où chaque heure vécue devient une relique dans l\'histoire d\'une famille."'
+                            data-en='"We do not organize parties. We erect temples of ephemeral emotion where each hour lived becomes a relic in a family\'
+                            s history."'>
+                            "Nous n'organisons pas des fêtes. Nous érigeons des temples d'émotion éphémères où chaque
+                            heure vécue devient une relique dans l'histoire d'une famille."
                         </blockquote>
-                        <p>Aujourd'hui, l'agence intervient en Europe et aux Caraïbes, cultivant des liens forts avec des artisans locaux d'exception pour garantir à sa clientèle VIP une authenticité absolue.</p>
+                        <p data-fr="Aujourd'hui, l'agence intervient en Europe et aux Caraïbes, cultivant des liens forts avec des artisans locaux d'exception pour garantir à sa clientèle VIP une authenticité absolue."
+                            data-en="Today, the agency operates in Europe and the Caribbean, cultivating strong ties with exceptional local artisans to ensure absolute authenticity for its VIP clientele.">
+                            Aujourd'hui, l'agence intervient en Europe et aux Caraïbes, cultivant des liens forts avec
+                            des artisans locaux d'exception pour garantir à sa clientèle VIP une authenticité absolue.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -95,35 +129,56 @@
         <!-- Our Values Section -->
         <section class="agency-values" id="values" style="background-color: var(--color-bg-beige);">
             <div class="container">
-                <p class="editorial-subtitle">Nos Piliers</p>
-                <h2 class="editorial-title">Ce Qui Nous Guide</h2>
-                
+                <p class="editorial-subtitle" data-fr="Nos Piliers" data-en="Our Pillars">Nos Piliers</p>
+                <h2 class="editorial-title" data-fr="Ce Qui Nous Guide" data-en="What Guides Us">Ce Qui Nous Guide</h2>
+
                 <div class="services-grid" style="margin-top: 4rem;">
                     <!-- Value 1 -->
-                    <div class="service-card" style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
+                    <div class="service-card"
+                        style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div
+                            style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
                             <i data-lucide="shield-check"></i>
                         </div>
-                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Discrétion Absolue</h3>
-                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;">Nous accompagnons des familles royales, célébrités et entrepreneurs prestigieux. La confidentialité et la protection de votre vie privée sont nos priorités absolues.</p>
+                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;"
+                            data-fr="Discrétion Absolue" data-en="Absolute Discretion">Discrétion Absolue</h3>
+                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;"
+                            data-fr="Nous accompagnons des familles royales, célébrités et entrepreneurs prestigieux. La confidentialité et la protection de votre vie privée sont nos priorités absolues."
+                            data-en="We support royal families, celebrities, and prestigious entrepreneurs. Confidentiality and the protection of your privacy are our top priorities.">
+                            Nous accompagnons des familles royales, célébrités et entrepreneurs prestigieux. La
+                            confidentialité et la protection de votre vie privée sont nos priorités absolues.</p>
                     </div>
 
                     <!-- Value 2 -->
-                    <div class="service-card" style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
+                    <div class="service-card"
+                        style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div
+                            style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
                             <i data-lucide="eye"></i>
                         </div>
-                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Exigence Obsessionnelle</h3>
-                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;">De l'alignement des verres en cristal à la seconde près du lancer de pétales, nous chassons la moindre imperfection pour garantir une exécution d'orfèvre.</p>
+                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;"
+                            data-fr="Exigence Obsessionnelle" data-en="Obsessive Exactness">Exigence Obsessionnelle</h3>
+                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;"
+                            data-fr="De l'alignement des verres en cristal à la seconde près du lancer de pétales, nous chassons la moindre imperfection pour garantir une exécution d'orfèvre."
+                            data-en="From the alignment of crystal glasses to the split-second timing of petal tosses, we hunt down the slightest imperfection to ensure goldsmith-like execution.">
+                            De l'alignement des verres en cristal à la seconde près du lancer de pétales, nous chassons
+                            la moindre imperfection pour garantir une exécution d'orfèvre.</p>
                     </div>
 
                     <!-- Value 3 -->
-                    <div class="service-card" style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
-                        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
+                    <div class="service-card"
+                        style="background-color: var(--color-bg-light); padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <div
+                            style="width: 60px; height: 60px; border-radius: 50%; background-color: var(--color-bg-rose); display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 2rem;">
                             <i data-lucide="sparkles"></i>
                         </div>
-                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;">Audace Créative</h3>
-                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;">Nous refusons le prêt-à-penser. Chaque mariage est un concept unique élaboré à partir de votre histoire, réinventant les codes du design classique.</p>
+                        <h3 class="service-card-title" style="font-size: 1.6rem; margin-bottom: 1rem;"
+                            data-fr="Audace Créative" data-en="Creative Boldness">Audace Créative</h3>
+                        <p class="service-card-desc" style="font-size: 0.9rem; line-height: 1.6;"
+                            data-fr="Nous refusons le prêt-à-penser. Chaque mariage est un concept unique élaboré à partir de votre histoire, réinventant les codes du design classique."
+                            data-en="We refuse off-the-shelf thinking. Each wedding is a unique concept built around your story, reinventing the codes of classic design.">
+                            Nous refusons le prêt-à-penser. Chaque mariage est un concept unique élaboré à partir de
+                            votre histoire, réinventant les codes du design classique.</p>
                     </div>
                 </div>
             </div>
@@ -132,51 +187,76 @@
         <!-- Agency History Timeline Section -->
         <section class="method-section" style="background-color: var(--color-bg-light);">
             <div class="container">
-                <p class="editorial-subtitle">L'Évolution</p>
-                <h2 class="editorial-title">Notre Parcours</h2>
-                
+                <p class="editorial-subtitle" data-fr="L'Évolution" data-en="The Evolution">L'Évolution</p>
+                <h2 class="editorial-title" data-fr="Notre Parcours" data-en="Our Journey">Notre Parcours</h2>
+
                 <div class="method-timeline">
                     <!-- Step 1 -->
                     <div class="timeline-step">
                         <div class="timeline-dot"></div>
                         <span class="step-num">2018</span>
-                        <h3 class="step-title">Création de la Maison</h3>
-                        <p class="step-desc">Hélène de Valois lance l'agence à Paris avec l'ambition de dépoussiérer l'organisation événementielle classique grâce à une vision résolument éditoriale.</p>
+                        <h3 class="step-title" data-fr="Création de la Maison" data-en="Creation of the House">Création
+                            de la Maison</h3>
+                        <p class="step-desc"
+                            data-fr="Hélène de Valois lance l'agence à Paris avec l'ambition de dépoussiérer l'organisation événementielle classique grâce à une vision résolument éditoriale."
+                            data-en="Hélène de Valois launches the agency in Paris with the ambition of dusting off classical event planning with a resolutely editorial vision.">
+                            Hélène de Valois lance l'agence à Paris avec l'ambition de dépoussiérer l'organisation
+                            événementielle classique grâce à une vision résolument éditoriale.</p>
                     </div>
 
                     <!-- Step 2 -->
                     <div class="timeline-step">
                         <div class="timeline-dot"></div>
                         <span class="step-num">2020</span>
-                        <h3 class="step-title">Expansion Destination Wedding</h3>
-                        <p class="step-desc">L'agence ouvre son bureau en Italie pour orchestrer ses premiers mariages d'exception au Lac de Côme et en Toscane pour une clientèle internationale exigeante.</p>
+                        <h3 class="step-title" data-fr="Expansion Destination Wedding"
+                            data-en="Destination Wedding Expansion">Expansion Destination Wedding</h3>
+                        <p class="step-desc"
+                            data-fr="L'agence ouvre son bureau en Italie pour orchestrer ses premiers mariages d'exception au Lac de Côme et en Toscane pour une clientèle internationale exigeante."
+                            data-en="The agency opens its office in Italy to orchestrate its first exceptional weddings in Lake Como and Tuscany for a demanding international clientele.">
+                            L'agence ouvre son bureau en Italie pour orchestrer ses premiers mariages d'exception au Lac
+                            de Côme et en Toscane pour une clientèle internationale exigeante.</p>
                     </div>
 
                     <!-- Step 3 -->
                     <div class="timeline-step">
                         <div class="timeline-dot"></div>
                         <span class="step-num">2023</span>
-                        <h3 class="step-title">Reconnaissance de l'Industrie</h3>
-                        <p class="step-desc">Élue parmi les meilleures agences de Wedding Planner de luxe par des magazines de mode prestigieux, saluant notre approche sur mesure d'exception.</p>
+                        <h3 class="step-title" data-fr="Reconnaissance de l'Industrie" data-en="Industry Recognition">
+                            Reconnaissance de l'Industrie</h3>
+                        <p class="step-desc"
+                            data-fr="Élue parmi les meilleures agences de Wedding Planner de luxe par des magazines de mode prestigieux, saluant notre approche sur mesure d'exception."
+                            data-en="Voted among the best luxury wedding planning agencies by prestigious fashion magazines, praising our exceptional bespoke approach.">
+                            Élue parmi les meilleures agences de Wedding Planner de luxe par des magazines de mode
+                            prestigieux, saluant notre approche sur mesure d'exception.</p>
                     </div>
 
                     <!-- Step 4 -->
                     <div class="timeline-step">
                         <div class="timeline-dot"></div>
                         <span class="step-num">2026</span>
-                        <h3 class="step-title">Le Présent & L'Avenir</h3>
-                        <p class="step-desc">Une équipe internationale unie par la même passion pour l'art de recevoir, concevant des réceptions éternelles dans les plus beaux écrins du monde.</p>
+                        <h3 class="step-title" data-fr="Le Présent & L'Avenir" data-en="The Present & The Future">Le
+                            Présent & L'Avenir</h3>
+                        <p class="step-desc"
+                            data-fr="Une équipe internationale unie par la même passion pour lart de recevoir, concevant des réceptions éternelles dans les plus beaux écrins du monde."
+                            data-en="An international team united by the same passion for the art of hosting, creating eternal receptions in the world's most beautiful settings.">
+                            Une équipe internationale unie par la même passion pour l'art de recevoir, concevant des
+                            réceptions éternelles dans les plus beaux écrins du monde.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Final CTA Banner -->
-        <section class="contact-banner" style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
+        <section class="contact-banner"
+            style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
             <div class="container">
-                <p class="editorial-subtitle">Planifions Ensemble</p>
-                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);">Donnez Vie à Vos Plus Beaux Moments</h2>
-                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;">Initier la Planification</a>
+                <p class="editorial-subtitle" data-fr="Planifions Ensemble" data-en="Let's Plan Together">Planifions
+                    Ensemble</p>
+                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);"
+                    data-fr="Donnez Vie à Vos Plus Beaux Moments" data-en="Bring Your Most Beautiful Moments to Life">
+                    Donnez Vie à Vos Plus Beaux Moments</h2>
+                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;"
+                    data-fr="Initier la Planification" data-en="Initiate Planning">Initier la Planification</a>
             </div>
         </section>
     </main>
@@ -190,54 +270,107 @@
                         <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
                         <span class="logo-sub">Events</span>
                     </a>
-                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <p data-fr="Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige."
+                        data-en="International agency specializing in the design, planning, and scenography of exceptional weddings and prestigious receptions.">
+                        Agence internationale spécialisée dans la conception, la planification et la scénographie de
+                        mariages d'exception et réceptions de prestige.</p>
                     <div class="social-icons-footer">
                         <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col-links">
-                    <h4>L'Agence</h4>
+                    <h4 data-fr="L'Agence" data-en="The Agency">L'Agence</h4>
                     <ul class="footer-links-list">
-                        <li><a href="about.html">Notre Histoire</a></li>
-                        <li><a href="about.html#values">Nos Valeurs</a></li>
-                        <li><a href="portfolio.html">Nos Mariages</a></li>
-                        <li><a href="contact.html">Prendre Contact</a></li>
+                        <li><a href="about.html" data-fr="Notre Histoire" data-en="Our Story">Notre Histoire</a></li>
+                        <li><a href="about.html#values" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html" data-fr="Nos Mariages" data-en="Our Weddings">Nos Mariages</a></li>
+                        <li><a href="contact.html" data-fr="Prendre Contact" data-en="Get in Touch">Prendre Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer-col-links">
-                    <h4>Services</h4>
+                    <h4 data-fr="Services" data-en="Services">Services</h4>
                     <ul class="footer-links-list">
-                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
-                        <li><a href="services.html#decor">Scénographie</a></li>
-                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
-                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                        <li><a href="services.html#absolu" data-fr="Organisation A-Z"
+                                data-en="A-Z Planning">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor" data-fr="Scénographie" data-en="Scenography">Scénographie</a>
+                        </li>
+                        <li><a href="services.html#jourj" data-fr="Coordination Jour J"
+                                data-en="Day-of Coordination">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations" data-fr="Destinations de Luxe"
+                                data-en="Luxury Destinations">Destinations de Luxe</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col-contact">
-                    <h4>Conciergerie</h4>
+                    <h4 data-fr="Conciergerie" data-en="Concierge Service">Conciergerie</h4>
                     <div class="footer-contact-info">
-                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
-                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
-                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
-                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                        <span><i data-lucide="phone"></i> +229 01 42 10 01 56</span>
+                        <span><i data-lucide="mail"></i> eventafter@gmail.com</span>
+                        <span data-fr="Place Vendôme, 75001 Paris" data-en="Place Vendôme, 75001 Paris"><i
+                                data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/2290142100156" class="whatsapp-link"><i
+                                    data-lucide="message-square"></i> <span data-fr="WhatsApp VIP Direct"
+                                    data-en="WhatsApp VIP Direct">WhatsApp VIP Direct</span></a></span>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <p data-fr="&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité"
+                    data-en="&copy; 2026 Ever After Events. All rights reserved. Legal Notice | Privacy Policy">&copy;
+                    2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Cookies</a>
-                    <a href="#">Plan du site</a>
+                    <a href="#" data-fr="Cookies" data-en="Cookies">Cookies</a>
+                    <a href="#" data-fr="Plan du site" data-en="Sitemap">Plan du site</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-toggle" aria-label="Open chat">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+    </div>
+    <div id="chatbot-window" aria-hidden="true">
+        <div id="chatbot-header">
+            <div class="chatbot-title">
+                <div class="chatbot-title-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="chatbot-title-text">Ever After</span>
+                    <span class="chatbot-title-status" data-fr="Conciergerie en ligne"
+                        data-en="Online Concierge">Conciergerie en ligne</span>
+                </div>
+            </div>
+            <span id="chatbot-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </span>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" data-placeholder-fr="Posez votre question…" data-placeholder-en="Ask your question…"
+                placeholder="Posez votre question…" />
+            <button aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
@@ -249,5 +382,10 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/flower_fall.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
+
 </html>

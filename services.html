@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services d'Exception | Ever After Events</title>
-    <meta name="description" content="Découvrez nos services d'organisation haut de gamme, de design événementiel et de coordination jour J. Un accompagnement sur-mesure pour votre mariage de rêve.">
-    
+    <meta name="description"
+        content="Découvrez nos services d'organisation haut de gamme, de design événementiel et de coordination jour J. Un accompagnement sur-mesure pour votre mariage de rêve.">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 </head>
+
 <body class="has-hero-video">
 
     <!-- Header Navigation -->
@@ -20,19 +25,21 @@
                 <span class="logo-main">Ever After</span>
                 <span class="logo-sub">Events</span>
             </a>
-            
+
             <nav role="navigation">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="about.html" class="nav-link">À Propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
 
             <div class="header-cta">
-                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </div>
 
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
@@ -46,28 +53,34 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-            <li style="margin-top: 2rem;">
-                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+            <li><a href="index.html" class="mobile-nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-fr="Services" data-en="Services">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+            </li>
+            <li><a href="about.html" class="mobile-nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+            <li class="mobile-nav-cta">
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </li>
         </ul>
     </div>
 
     <main id="main-content">
         <!-- Subpage Header Banner -->
-        <section class="subpage-hero" style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/736x/37/92/70/379270820fb7dc02655870aea84b348e.jpg') center/cover no-repeat;">>
+        <section class="subpage-hero services-hero-bg">
             <div class="container">
-                <p class="editorial-subtitle" style="color: var(--color-gold);">Nos Prestations</p>
-                <h1 class="editorial-title" style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;">L'Excellence sur Mesure</h1>
-                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;">Chaque détail est une opportunité de créer un souvenir magique. Nous concevons vos réceptions avec le plus haut niveau de raffinement.</p>
+                <p class="editorial-subtitle" data-fr="Nos Prestations" data-en="Our Services">Nos Prestations</p>
+                <h1 class="editorial-title" data-fr="L'Excellence sur Mesure" data-en="Excellence Tailored for You">
+                    L'Excellence sur Mesure</h1>
+                <p class="subpage-hero-desc"
+                    data-fr="Chaque détail est une opportunité de créer un souvenir magique. Nous concevons vos réceptions avec le plus haut niveau de raffinement."
+                    data-en="Every detail is an opportunity to create a magical memory. We design your receptions with the highest level of refinement.">
+                    Chaque détail est une opportunité de créer un souvenir magique. Nous concevons vos réceptions avec
+                    le plus haut niveau de raffinement.</p>
             </div>
-            
+
             <div class="scroll-indicator">
-                <span>Faire Défiler</span>
+                <span data-fr="Faire Défiler" data-en="Scroll Down">Faire Défiler</span>
                 <div class="scroll-line"></div>
             </div>
         </section>
@@ -75,59 +88,78 @@
         <!-- Detailed Services Breakdown -->
         <section class="services-breakdown" aria-label="Détail des prestations">
             <div class="container">
-                
+
                 <!-- Service 1: L'Absolu -->
-                <div class="editorial-grid" id="absolu" style="margin-bottom: 10rem;">
+                <div class="editorial-grid service-block" id="absolu">
                     <div class="editorial-img-wrapper">
-                        <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg" alt="Robe de mariée de créateur et préparatifs raffinés">
+                        <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg"
+                            alt="Robe de mariée de créateur et préparatifs raffinés">
                     </div>
                     <div class="editorial-content-block">
                         <p class="editorial-subtitle">Organisation de A à Z</p>
                         <h3>L'Absolu</h3>
-                        <p>Cette prestation s'adresse aux couples exigeants désireux de confier l'intégralité du processus de planification à des experts. De la première esquisse à l'extinction des bougies, nous prenons tout en main pour vous permettre de vivre uniquement la magie des préparatifs.</p>
-                        <ul style="list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.8rem;">
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Recherche et sélection du lieu exclusif (châteaux, domaines, villas)</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Recrutement et coordination de prestataires de prestige</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Gestion administrative, budgétaire et logistique des transports</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Présence continue le jour J avec une équipe de conciergerie dédiée</li>
+                        <p>Cette prestation s'adresse aux couples exigeants désireux de confier l'intégralité du
+                            processus de planification à des experts. De la première esquisse à l'extinction des
+                            bougies, nous prenons tout en main pour vous permettre de vivre uniquement la magie des
+                            préparatifs.</p>
+                        <ul class="service-feature-list">
+                            <li><i data-lucide="check"></i> Recherche et sélection du lieu exclusif (châteaux, domaines,
+                                villas)</li>
+                            <li><i data-lucide="check"></i> Recrutement et coordination de prestataires de prestige</li>
+                            <li><i data-lucide="check"></i> Gestion administrative, budgétaire et logistique des
+                                transports</li>
+                            <li><i data-lucide="check"></i> Présence continue le jour J avec une équipe de conciergerie
+                                dédiée</li>
                         </ul>
                         <a href="contact.html" class="btn-primary">Réserver ce service</a>
                     </div>
                 </div>
 
                 <!-- Service 2: L'Esthétique -->
-                <div class="editorial-grid" id="decor" style="margin-bottom: 10rem;">
-                    <div class="editorial-content-block" style="order: 2;">
+                <div class="editorial-grid service-block" id="decor">
+                    <div class="editorial-content-block content-right">
                         <p class="editorial-subtitle">Design & Scénographie</p>
                         <h3>L'Esthétique</h3>
-                        <p>Nous façonnons l'univers visuel de votre union. À travers des planches d'inspiration minutieuses, nous définissons une ambiance sur mesure où s'accordent décoration florale, art de la table d'exception, lumières féeriques et papeterie d'art.</p>
-                        <ul style="list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.8rem;">
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Direction artistique et élaboration de moodboards interactifs</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Design floral architectural (arches, suspensions, centres de table)</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Sélection rigoureuse de mobilier, vaisselle fine et textures</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Installation technique de l'éclairage scénographique</li>
+                        <p>Nous façonnons l'univers visuel de votre union. À travers des planches d'inspiration
+                            minutieuses, nous définissons une ambiance sur mesure où s'accordent décoration florale, art
+                            de la table d'exception, lumières féeriques et papeterie d'art.</p>
+                        <ul class="service-feature-list">
+                            <li><i data-lucide="check"></i> Direction artistique et élaboration de moodboards
+                                interactifs</li>
+                            <li><i data-lucide="check"></i> Design floral architectural (arches, suspensions, centres de
+                                table)</li>
+                            <li><i data-lucide="check"></i> Sélection rigoureuse de mobilier, vaisselle fine et textures
+                            </li>
+                            <li><i data-lucide="check"></i> Installation technique de l'éclairage scénographique</li>
                         </ul>
                         <a href="contact.html" class="btn-primary">Réserver ce service</a>
                     </div>
-                    <div class="editorial-img-wrapper" style="order: 1;">
-                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" alt="Arche florale féerique de réception de mariage">
+                    <div class="editorial-img-wrapper img-left">
+                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg"
+                            alt="Arche florale féerique de réception de mariage">
                     </div>
                 </div>
 
                 <!-- Service 3: Le Jour J -->
                 <div class="editorial-grid" id="jourj">
                     <div class="editorial-img-wrapper">
-                        <img src="https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg" alt="Décoration extérieure et coordination de la cérémonie de mariage">
+                        <img src="https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg"
+                            alt="Décoration extérieure et coordination de la cérémonie de mariage">
                     </div>
                     <div class="editorial-content-block">
                         <p class="editorial-subtitle">Coordination Millimétrée</p>
                         <h3>Le Jour J</h3>
-                        <p>Vous avez planifié chaque étape mais souhaitez vivre votre plus beau jour l'esprit libre. Notre équipe intervient un mois avant pour orchestrer la logistique finale. Le jour du mariage, nous veillons discrètement au respect du timing et à la résolution instantanée de tout imprévu.</p>
-                        <ul style="list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.8rem;">
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Reprise de contact avec l'ensemble des prestataires à M-1</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Rédaction minutieuse du déroulé heure par heure</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Accueil et accueil des invités et prestataires sur le lieu</li>
-                            <li><i data-lucide="check" style="color: var(--color-gold); vertical-align: middle; margin-right: 0.5rem; width:16px;"></i> Supervision discrète mais omniprésente du matin au soir</li>
+                        <p>Vous avez planifié chaque étape mais souhaitez vivre votre plus beau jour l'esprit libre.
+                            Notre équipe intervient un mois avant pour orchestrer la logistique finale. Le jour du
+                            mariage, nous veillons discrètement au respect du timing et à la résolution instantanée de
+                            tout imprévu.</p>
+                        <ul class="service-feature-list">
+                            <li><i data-lucide="check"></i> Reprise de contact avec l'ensemble des prestataires à M-1
+                            </li>
+                            <li><i data-lucide="check"></i> Rédaction minutieuse du déroulé heure par heure</li>
+                            <li><i data-lucide="check"></i> Accueil et accueil des invités et prestataires sur le lieu
+                            </li>
+                            <li><i data-lucide="check"></i> Supervision discrète mais omniprésente du matin au soir</li>
                         </ul>
                         <a href="contact.html" class="btn-primary">Réserver ce service</a>
                     </div>
@@ -137,18 +169,20 @@
         </section>
 
         <!-- Method Timeline Section -->
-        <section class="method-section" style="background-color: var(--color-bg-beige);">
+        <section class="method-section">
             <div class="container">
                 <p class="editorial-subtitle">Notre Processus</p>
                 <h2 class="editorial-title">Le Chemin Vers la Perfection</h2>
-                
+
                 <div class="method-timeline">
                     <!-- Step 1 -->
                     <div class="timeline-step">
                         <div class="timeline-dot"></div>
                         <span class="step-num">Phase I</span>
                         <h3 class="step-title">Conceptualisation & Rêve</h3>
-                        <p class="step-desc">Nous prenons le temps de vous écouter pour comprendre vos envies profondes. Nous élaborons les moodboards d'inspiration et sélectionnons les lieux de prestige les plus pertinents.</p>
+                        <p class="step-desc">Nous prenons le temps de vous écouter pour comprendre vos envies profondes.
+                            Nous élaborons les moodboards d'inspiration et sélectionnons les lieux de prestige les plus
+                            pertinents.</p>
                     </div>
 
                     <!-- Step 2 -->
@@ -156,7 +190,9 @@
                         <div class="timeline-dot"></div>
                         <span class="step-num">Phase II</span>
                         <h3 class="step-title">Planification & Sélection</h3>
-                        <p class="step-desc">Nous négocions et réservons les meilleurs artisans (traiteurs d'exception, photographes éditoriaux, musiciens de renommée mondiale). Nous orchestrons le plan budgétaire précis.</p>
+                        <p class="step-desc">Nous négocions et réservons les meilleurs artisans (traiteurs d'exception,
+                            photographes éditoriaux, musiciens de renommée mondiale). Nous orchestrons le plan
+                            budgétaire précis.</p>
                     </div>
 
                     <!-- Step 3 -->
@@ -164,7 +200,9 @@
                         <div class="timeline-dot"></div>
                         <span class="step-num">Phase III</span>
                         <h3 class="step-title">Orchestration & Design</h3>
-                        <p class="step-desc">Les détails s'affinent. Nous testons l'art de la table, validons les designs floraux sur maquette tridimensionnelle, et réalisons les plannings techniques exhaustifs prestataires.</p>
+                        <p class="step-desc">Les détails s'affinent. Nous testons l'art de la table, validons les
+                            designs floraux sur maquette tridimensionnelle, et réalisons les plannings techniques
+                            exhaustifs prestataires.</p>
                     </div>
 
                     <!-- Step 4 -->
@@ -172,18 +210,19 @@
                         <div class="timeline-dot"></div>
                         <span class="step-num">Phase IV</span>
                         <h3 class="step-title">L'Apothéose</h3>
-                        <p class="step-desc">Le jour J est là. Notre équipe coordonne toute la logistique dans l'ombre. Vous avancez sereins, prêts à vivre le plus beau jour de votre vie avec vos proches.</p>
+                        <p class="step-desc">Le jour J est là. Notre équipe coordonne toute la logistique dans l'ombre.
+                            Vous avancez sereins, prêts à vivre le plus beau jour de votre vie avec vos proches.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq-section" style="background-color: var(--color-bg-light);">
+        <section class="faq-section">
             <div class="container">
                 <p class="editorial-subtitle">Une Réponse à Vos Interrogations</p>
                 <h2 class="editorial-title">Questions Fréquentes</h2>
-                
+
                 <div class="faq-accordion">
                     <!-- FAQ 1 -->
                     <div class="faq-item">
@@ -192,18 +231,25 @@
                             <span class="faq-icon-marker">+</span>
                         </button>
                         <div class="faq-panel">
-                            <p class="faq-answer">Nos honoraires sont calculés sous forme de forfait fixe défini en fonction de la complexité logistique, du nombre de convives et de la formule retenue. Ce forfait est transparent et déterminé lors de notre premier devis gratuit après évaluation de vos besoins, sans frais cachés.</p>
+                            <p class="faq-answer">Nos honoraires sont calculés sous forme de forfait fixe défini en
+                                fonction de la complexité logistique, du nombre de convives et de la formule retenue. Ce
+                                forfait est transparent et déterminé lors de notre premier devis gratuit après
+                                évaluation de vos besoins, sans frais cachés.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 2 -->
                     <div class="faq-item">
                         <button class="faq-trigger" aria-expanded="false">
-                            <span class="faq-question">Organisez-vous des mariages à l'étranger (Destination Weddings) ?</span>
+                            <span class="faq-question">Organisez-vous des mariages à l'étranger (Destination Weddings)
+                                ?</span>
                             <span class="faq-icon-marker">+</span>
                         </button>
                         <div class="faq-panel">
-                            <p class="faq-answer">Absolument. Nous sommes spécialisés dans les mariages de destination. Que ce soit sur les rives du Lac de Côme, dans un domaine en Toscane ou sur une île privée, nos équipes gèrent la logistique internationale, l'hébergement des invités et la coordination transfrontalière.</p>
+                            <p class="faq-answer">Absolument. Nous sommes spécialisés dans les mariages de destination.
+                                Que ce soit sur les rives du Lac de Côme, dans un domaine en Toscane ou sur une île
+                                privée, nos équipes gèrent la logistique internationale, l'hébergement des invités et la
+                                coordination transfrontalière.</p>
                         </div>
                     </div>
 
@@ -214,18 +260,26 @@
                             <span class="faq-icon-marker">+</span>
                         </button>
                         <div class="faq-panel">
-                            <p class="faq-answer">Pour une organisation sereine (surtout si vous ciblez des lieux de prestige très prisés), nous conseillons de nous contacter entre 9 et 12 mois avant la date souhaitée. Pour les formules de coordination Jour J uniquement, un délai de 2 à 3 mois est idéal.</p>
+                            <p class="faq-answer">Pour une organisation sereine (surtout si vous ciblez des lieux de
+                                prestige très prisés), nous conseillons de nous contacter entre 9 et 12 mois avant la
+                                date souhaitée. Pour les formules de coordination Jour J uniquement, un délai de 2 à 3
+                                mois est idéal.</p>
                         </div>
                     </div>
 
                     <!-- FAQ 4 -->
                     <div class="faq-item">
                         <button class="faq-trigger" aria-expanded="false">
-                            <span class="faq-question">Quelle est la différence entre un Wedding Planner et le coordinateur de notre lieu ?</span>
+                            <span class="faq-question">Quelle est la différence entre un Wedding Planner et le
+                                coordinateur de notre lieu ?</span>
                             <span class="faq-icon-marker">+</span>
                         </button>
                         <div class="faq-panel">
-                            <p class="faq-answer">Le coordinateur interne d'un lieu travaille pour le lieu (supervision de la salle, du traiteur interne). Un Wedding Planner travaille exclusivement pour vous. Nous gérons tous vos prestataires externes, la mise en beauté, les hébergements, les navettes, la décoration artistique globale, et veillons au respect exclusif de vos intérêts.</p>
+                            <p class="faq-answer">Le coordinateur interne d'un lieu travaille pour le lieu (supervision
+                                de la salle, du traiteur interne). Un Wedding Planner travaille exclusivement pour vous.
+                                Nous gérons tous vos prestataires externes, la mise en beauté, les hébergements, les
+                                navettes, la décoration artistique globale, et veillons au respect exclusif de vos
+                                intérêts.</p>
                         </div>
                     </div>
                 </div>
@@ -233,11 +287,12 @@
         </section>
 
         <!-- Final CTA Banner -->
-        <section class="contact-banner" style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
+        <section class="contact-banner">
             <div class="container">
                 <p class="editorial-subtitle">Votre Journée Parfaite Commence Ici</p>
-                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);">Donnons Vie à Votre Vision Unique</h2>
-                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;">Prendre rendez-vous <span class="btn-icon">→</span></a>
+                <h2 class="editorial-title">Donnons Vie à Votre Vision Unique</h2>
+                <a href="contact.html" class="btn-primary btn-large">Prendre rendez-vous <span
+                        class="btn-icon">→</span></a>
             </div>
         </section>
     </main>
@@ -247,18 +302,19 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col-brand">
-                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
-                        <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
+                    <a href="index.html" class="logo">
+                        <span class="logo-main">Ever After</span>
                         <span class="logo-sub">Events</span>
                     </a>
-                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de
+                        mariages d'exception et réceptions de prestige.</p>
                     <div class="social-icons-footer">
                         <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col-links">
                     <h4>L'Agence</h4>
                     <ul class="footer-links-list">
@@ -280,25 +336,33 @@
                 </div>
 
                 <div class="footer-col-contact">
-                    <h4>Conciergerie</h4>
+                    <h4 data-fr="Conciergerie" data-en="Concierge Service">Conciergerie</h4>
                     <div class="footer-contact-info">
-                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
-                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
-                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
-                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                        <span><i data-lucide="phone"></i> +229 01 42 10 01 56</span>
+                        <span><i data-lucide="mail"></i> eventafter@gmail.com</span>
+                        <span data-fr="Place Vendôme, 75001 Paris" data-en="Place Vendôme, 75001 Paris"><i
+                                data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span><a href="https://wa.me/2290142100156" class="whatsapp-link"><i
+                                    data-lucide="message-square"></i> <span data-fr="WhatsApp VIP Direct"
+                                    data-en="WhatsApp VIP Direct">WhatsApp VIP Direct</span></a></span>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <p data-fr="&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité"
+                    data-en="&copy; 2026 Ever After Events. All rights reserved. Legal Notice | Privacy Policy">&copy;
+                    2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Cookies</a>
-                    <a href="#">Plan du site</a>
+                    <a href="#" data-fr="Cookies" data-en="Cookies">Cookies</a>
+                    <a href="#" data-fr="Plan du site" data-en="Sitemap">Plan du site</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot placeholder -->
+    <div id="chatbot-container"></div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
@@ -310,7 +374,10 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="js/flower_fall.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/flower_fall.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
+
 </html>

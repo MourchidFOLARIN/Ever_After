@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ever After Events | Wedding Planner & Décorateur de Luxe</title>
-    
+
     <!-- SEO & Metadata -->
-    <meta name="description" content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme en France et à l'international. Faites l'expérience du luxe absolu et de la sérénité.">
-    <meta name="keywords" content="wedding planner luxe, organisateur mariage prestige, decoration mariage haut de gamme, coordination jour j, ever after events">
+    <meta name="description"
+        content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme en France et à l'international. Faites l'expérience du luxe absolu et de la sérénité.">
+    <meta name="keywords"
+        content="wedding planner luxe, organisateur mariage prestige, decoration mariage haut de gamme, coordination jour j, ever after events">
     <meta name="author" content="Ever After Events">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.everafterevents.com/">
     <meta property="og:title" content="Ever After Events | Wedding Planner & Décorateur de Luxe">
-    <meta property="og:description" content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme en France et à l'international. Faites l'expérience du luxe absolu.">
+    <meta property="og:description"
+        content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme en France et à l'international. Faites l'expérience du luxe absolu.">
     <meta property="og:image" content="images/hero_fallback.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.everafterevents.com/">
     <meta property="twitter:title" content="Ever After Events | Wedding Planner & Décorateur de Luxe">
-    <meta property="twitter:description" content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme.">
+    <meta property="twitter:description"
+        content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme.">
     <meta property="twitter:image" content="images/hero_fallback.png">
 
     <!-- Stylesheets -->
@@ -29,6 +34,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 
     <!-- Schema.org JSON-LD (SEO) -->
     <script type="application/ld+json">
@@ -50,11 +57,12 @@
         "latitude": 48.8675,
         "longitude": 2.3294
       },
-      "telephone": "+33140000000",
+      "telephone": "+2290142100156",
       "priceRange": "$$$$"
     }
     </script>
 </head>
+
 <body class="has-hero-video">
 
     <!-- Header Navigation -->
@@ -64,19 +72,21 @@
                 <span class="logo-main">Ever After</span>
                 <span class="logo-sub">Events</span>
             </a>
-            
+
             <nav role="navigation">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="about.html" class="nav-link">À Propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
 
             <div class="header-cta">
-                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </div>
 
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
@@ -90,13 +100,15 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="index.html" class="mobile-nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-fr="Services" data-en="Services">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+            </li>
+            <li><a href="about.html" class="mobile-nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
             <li style="margin-top: 2rem;">
-                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;" data-fr="Prendre RDV"
+                    data-en="Book an Appt">Prendre RDV</a>
             </li>
         </ul>
     </div>
@@ -106,28 +118,41 @@
         <section class="hero-section" aria-label="Présentation cinématique">
             <div class="hero-video-container">
                 <!-- Hero: Ultra-romantic wedding reception (Royal Luxury Events) -->
-                <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" id="heroVideo">
-                    <source src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4" type="video/mp4">
-                    <source src="https://v1.pinimg.com/videos/iht/hls/8d/db/a4/8ddba44943a92792f645bde6e4670ed0.m3u8" type="application/x-mpegURL">
+                <video autoplay muted loop playsinline
+                    poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" id="heroVideo">
+                    <source
+                        src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4"
+                        type="video/mp4">
+                    <source src="https://v1.pinimg.com/videos/iht/hls/8d/db/a4/8ddba44943a92792f645bde6e4670ed0.m3u8"
+                        type="application/x-mpegURL">
                 </video>
             </div>
             <div class="hero-overlay"></div>
-            
+
             <div class="hero-content">
                 <div class="hero-badge">
                     <i data-lucide="sparkles" aria-hidden="true"></i>
-                    Wedding Planner & Design de Prestige
+                    <span data-fr="Wedding Planner & Design de Prestige"
+                        data-en="Prestige Wedding Planner & Design">Wedding Planner & Design de Prestige</span>
                 </div>
-                <h1 class="hero-title">Créateurs d'Instants Éternels</h1>
-                <p class="hero-subtitle">Nous concevons et orchestrons des mariages d'exception et des réceptions exclusives dans les lieux les plus somptueux de la planète.</p>
+                <h1 class="hero-title" data-fr="Créateurs d'Instants Éternels" data-en="Creators of Eternal Moments">
+                    Créateurs d'Instants Éternels</h1>
+                <p class="hero-subtitle"
+                    data-fr="Nous concevons et orchestrons des mariages d'exception et des réceptions exclusives dans les lieux les plus somptueux de la planète."
+                    data-en="We design and orchestrate exceptional weddings and exclusive receptions in the most sumptuous venues on the planet.">
+                    Nous concevons et orchestrons des mariages d'exception et des réceptions exclusives dans les lieux
+                    les plus somptueux de la planète.</p>
                 <div class="hero-ctas">
-                    <a href="portfolio.html" class="btn-primary">Découvrir nos mariages <span class="btn-icon">→</span></a>
-                    <a href="contact.html" class="btn-secondary">Réserver une consultation</a>
+                    <a href="portfolio.html" class="btn-primary"><span data-fr="Découvrir nos mariages"
+                            data-en="Discover our weddings">Découvrir nos mariages</span> <span
+                            class="btn-icon">→</span></a>
+                    <a href="contact.html" class="btn-secondary" data-fr="Réserver une consultation"
+                        data-en="Book a consultation">Réserver une consultation</a>
                 </div>
             </div>
 
             <div class="scroll-indicator">
-                <span>Faire Défiler</span>
+                <span data-fr="Faire Défiler" data-en="Scroll Down">Faire Défiler</span>
                 <div class="scroll-line"></div>
             </div>
         </section>
@@ -135,9 +160,14 @@
         <!-- 2. BRAND STATEMENT -->
         <section class="brand-intro" aria-label="Notre philosophie">
             <div class="container">
-                <p class="editorial-subtitle">L'Art de Recevoir</p>
-                <h2 class="brand-statement-text">
-                    "Chaque détail a une âme. Nous croyons que le luxe réside dans l'harmonie invisible des moments parfaits, là où l'émotion rencontre la perfection absolue."
+                <p class="editorial-subtitle" data-fr="L'Art de Recevoir" data-en="The Art of Hosting">L'Art de Recevoir
+                </p>
+                <h2 class="brand-statement-text"
+                    data-fr='"Chaque détail a une âme. Nous croyons que le luxe réside dans l' harmonie invisible des
+                    moments parfaits, là où l'émotion rencontre la perfection absolue."'
+                    data-en='"Every detail has a soul. We believe that luxury lies in the invisible harmony of perfect moments, where emotion meets absolute perfection."'>
+                    "Chaque détail a une âme. Nous croyons que le luxe réside dans l'harmonie invisible des moments
+                    parfaits, là où l'émotion rencontre la perfection absolue."
                 </h2>
             </div>
         </section>
@@ -147,14 +177,26 @@
             <div class="container">
                 <div class="editorial-grid">
                     <div class="editorial-img-wrapper">
-                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" alt="Dîner romantique de mariage en plein air sous les étoiles de Provence" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg"
+                            alt="Dîner romantique de mariage en plein air sous les étoiles de Provence" loading="lazy">
                     </div>
                     <div class="editorial-content-block">
-                        <p class="editorial-subtitle">Une Signature Unique</p>
-                        <h3>L'orchestration de votre rêve le plus audacieux</h3>
-                        <p>Chez Ever After Events, nous transcendons la simple planification d'événements. Nous façonnons des expériences sensorielles immersives. Notre approche est celle d'une maison de haute couture : entièrement personnalisée, méticuleuse et d'une discrétion absolue.</p>
-                        <p>Des falaises romantiques d'Amalfi aux châteaux grandioses de la vallée de la Loire, nous donnons vie à vos désirs les plus extraordinaires avec une sérénité inégalée.</p>
-                        <a href="about.html" class="btn-secondary">Découvrir l'Agence</a>
+                        <p class="editorial-subtitle" data-fr="Une Signature Unique" data-en="A Unique Signature">Une
+                            Signature Unique</p>
+                        <h3 data-fr="L'orchestration de votre rêve le plus audacieux"
+                            data-en="The orchestration of your boldest dream">L'orchestration de votre rêve le plus
+                            audacieux</h3>
+                        <p data-fr="Chez Ever After Events, nous transcendons la simple planification d'événements. Nous façonnons des expériences sensorielles immersives. Notre approche est celle d'une maison de haute couture : entièrement personnalisée, méticuleuse et d'une discrétion absolue."
+                            data-en="At Ever After Events, we transcend simple event planning. We shape immersive sensory experiences. Our approach is that of a haute couture house: fully customized, meticulous, and with absolute discretion.">
+                            Chez Ever After Events, nous transcendons la simple planification d'événements. Nous
+                            façonnons des expériences sensorielles immersives. Notre approche est celle d'une maison de
+                            haute couture : entièrement personnalisée, méticuleuse et d'une discrétion absolue.</p>
+                        <p data-fr="Des falaises romantiques d'Amalfi aux châteaux grandioses de la vallée de la Loire, nous donnons vie à vos désirs les plus extraordinaires avec une sérénité inégalée."
+                            data-en="From the romantic cliffs of Amalfi to the grandiose castles of the Loire Valley, we bring your most extraordinary desires to life with unparalleled serenity.">
+                            Des falaises romantiques d'Amalfi aux châteaux grandioses de la vallée de la Loire, nous
+                            donnons vie à vos désirs les plus extraordinaires avec une sérénité inégalée.</p>
+                        <a href="about.html" class="btn-secondary" data-fr="Découvrir l'Agence"
+                            data-en="Discover the Agency">Découvrir l'Agence</a>
                     </div>
                 </div>
             </div>
@@ -166,19 +208,23 @@
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number" data-target="150" data-suffix="+">0</div>
-                        <div class="stat-label">Mariages Orchestrés</div>
+                        <div class="stat-label" data-fr="Mariages Orchestrés" data-en="Weddings Orchestrated">Mariages
+                            Orchestrés</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number" data-target="12" data-suffix="">0</div>
-                        <div class="stat-label">Destinations Insolites</div>
+                        <div class="stat-label" data-fr="Destinations Insolites" data-en="Exotic Destinations">
+                            Destinations Insolites</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number" data-target="98" data-suffix="%">0</div>
-                        <div class="stat-label">Taux de Recommandation</div>
+                        <div class="stat-label" data-fr="Taux de Recommandation" data-en="Recommendation Rate">Taux de
+                            Recommandation</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number" data-target="100" data-suffix="%">0</div>
-                        <div class="stat-label">Sérénité Garantie</div>
+                        <div class="stat-label" data-fr="Sérénité Garantie" data-en="Guaranteed Serenity">Sérénité
+                            Garantie</div>
                     </div>
                 </div>
             </div>
@@ -187,43 +233,64 @@
         <!-- 5. SERVICES SECTION -->
         <section class="services-section" aria-label="Nos Prestations">
             <div class="container">
-                <p class="editorial-subtitle">Nos Domaines d'Expertise</p>
-                <h2 class="editorial-title">Une Offre d'Exception</h2>
-                
+                <p class="editorial-subtitle" data-fr="Nos Domaines d'Expertise" data-en="Our Areas of Expertise">Nos
+                    Domaines d'Expertise</p>
+                <h2 class="editorial-title" data-fr="Une Offre d'Exception" data-en="An Exceptional Offering">Une Offre
+                    d'Exception</h2>
+
                 <div class="services-grid">
                     <!-- Service 1 -->
                     <article class="service-card">
                         <div class="service-card-img">
-                            <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg" alt="Robe de mariée luxueuse et préparatifs élégants" loading="lazy">
+                            <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg"
+                                alt="Robe de mariée luxueuse et préparatifs élégants" loading="lazy">
                         </div>
                         <div class="service-card-content">
-                            <h3 class="service-card-title">L'Absolu</h3>
-                            <p class="service-card-desc">Organisation totale et sur-mesure de A à Z. De la recherche du lieu idéal à la gestion du budget et à la logistique complexe.</p>
-                            <a href="services.html" class="btn-secondary">En savoir plus <span class="btn-icon">→</span></a>
+                            <h3 class="service-card-title" data-fr="L'Absolu" data-en="The Absolute">L'Absolu</h3>
+                            <p class="service-card-desc"
+                                data-fr="Organisation totale et sur-mesure de A à Z. De la recherche du lieu idéal à la gestion du budget et à la logistique complexe."
+                                data-en="Total and bespoke organization from A to Z. From finding the perfect venue to budget management and complex logistics.">
+                                Organisation totale et sur-mesure de A à Z. De la recherche du lieu idéal à la gestion
+                                du budget et à la logistique complexe.</p>
+                            <a href="services.html" class="btn-secondary"><span data-fr="En savoir plus"
+                                    data-en="Learn more">En savoir plus</span> <span class="btn-icon">→</span></a>
                         </div>
                     </article>
 
                     <!-- Service 2 -->
                     <article class="service-card">
                         <div class="service-card-img">
-                            <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" alt="Arche florale féerique et décoration de réception" loading="lazy">
+                            <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg"
+                                alt="Arche florale féerique et décoration de réception" loading="lazy">
                         </div>
                         <div class="service-card-content">
-                            <h3 class="service-card-title">L'Esthétique</h3>
-                            <p class="service-card-desc">Conception visuelle et scénographie complète. Décoration florale, éclairage d'ambiance et art de la table pour sublimer votre univers.</p>
-                            <a href="services.html" class="btn-secondary">En savoir plus <span class="btn-icon">→</span></a>
+                            <h3 class="service-card-title" data-fr="L'Esthétique" data-en="The Aesthetics">L'Esthétique
+                            </h3>
+                            <p class="service-card-desc"
+                                data-fr="Conception visuelle et scénographie complète. Décoration florale, éclairage d'ambiance et art de la table pour sublimer votre univers."
+                                data-en="Complete visual design and scenography. Floral decoration, ambient lighting, and tableware styling to elevate your universe.">
+                                Conception visuelle et scénographie complète. Décoration florale, éclairage d'ambiance
+                                et art de la table pour sublimer votre univers.</p>
+                            <a href="services.html" class="btn-secondary"><span data-fr="En savoir plus"
+                                    data-en="Learn more">En savoir plus</span> <span class="btn-icon">→</span></a>
                         </div>
                     </article>
 
                     <!-- Service 3 -->
                     <article class="service-card">
                         <div class="service-card-img">
-                            <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg" alt="Cérémonie de mariage en plein air dans un jardin fleuri" loading="lazy">
+                            <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg"
+                                alt="Cérémonie de mariage en plein air dans un jardin fleuri" loading="lazy">
                         </div>
                         <div class="service-card-content">
-                            <h3 class="service-card-title">Le Jour J</h3>
-                            <p class="service-card-desc">Coordination minutieuse du jour le plus important. Gestion des prestataires, respect du timing et discrétion pour une sérénité totale.</p>
-                            <a href="services.html" class="btn-secondary">En savoir plus <span class="btn-icon">→</span></a>
+                            <h3 class="service-card-title" data-fr="Le Jour J" data-en="The Wedding Day">Le Jour J</h3>
+                            <p class="service-card-desc"
+                                data-fr="Coordination minutieuse du jour le plus important. Gestion des prestataires, respect du timing et discrétion pour une sérénité totale."
+                                data-en="Meticulous coordination of the most important day. Vendor management, timing control, and absolute discretion for complete peace of mind.">
+                                Coordination minutieuse du jour le plus important. Gestion des prestataires, respect du
+                                timing et discrétion pour une sérénité totale.</p>
+                            <a href="services.html" class="btn-secondary"><span data-fr="En savoir plus"
+                                    data-en="Learn more">En savoir plus</span> <span class="btn-icon">→</span></a>
                         </div>
                     </article>
                 </div>
@@ -233,68 +300,92 @@
         <!-- 6. PORTFOLIO TEASER (Masonry) -->
         <section class="gallery-section" aria-label="Aperçu du Portfolio">
             <div class="container">
-                <p class="editorial-subtitle">Réalisations Signées</p>
-                <h2 class="editorial-title">Histoires Singulières</h2>
-                
+                <p class="editorial-subtitle" data-fr="Réalisations Signées" data-en="Signature Realizations">
+                    Réalisations Signées</p>
+                <h2 class="editorial-title" data-fr="Histoires Singulières" data-en="Singular Stories">Histoires
+                    Singulières</h2>
+
                 <div class="gallery-filters">
-                    <button class="filter-btn active" data-filter="all">Tous nos mariages</button>
-                    <button class="filter-btn" data-filter="chateau">Intérieur & Prestige</button>
-                    <button class="filter-btn" data-filter="exterieur">Extérieur & Nature</button>
+                    <button class="filter-btn active" data-filter="all" data-fr="Tous nos mariages"
+                        data-en="All Weddings">Tous nos mariages</button>
+                    <button class="filter-btn" data-filter="chateau" data-fr="Intérieur & Prestige"
+                        data-en="Indoor & Prestige">Intérieur & Prestige</button>
+                    <button class="filter-btn" data-filter="exterieur" data-fr="Extérieur & Nature"
+                        data-en="Outdoor & Nature">Extérieur & Nature</button>
                 </div>
 
                 <div class="masonry-grid">
                     <!-- Item 1: First look, romantic moment -->
                     <div class="gallery-item size-medium" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg" alt="Premier regard émouvant entre les mariés" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg"
+                            alt="Premier regard émouvant entre les mariés" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Le Premier Regard</h3>
-                            <span class="gallery-item-tag">Moment Éternel</span>
+                            <h3 class="gallery-item-title" data-fr="Le Premier Regard" data-en="First Look">Le Premier
+                                Regard</h3>
+                            <span class="gallery-item-tag" data-fr="Moment Éternel" data-en="Eternal Moment">Moment
+                                Éternel</span>
                         </div>
                     </div>
                     <!-- Item 2: Outdoor wedding garden setup -->
                     <div class="gallery-item size-large" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg" alt="Cérémonie en plein air avec arche blanche florale dans un jardin" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg"
+                            alt="Cérémonie en plein air avec arche blanche florale dans un jardin" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Cérémonie en Plein Air</h3>
-                            <span class="gallery-item-tag">Jardin & Nature</span>
+                            <h3 class="gallery-item-title" data-fr="Cérémonie en Plein Air" data-en="Outdoor Ceremony">
+                                Cérémonie en Plein Air</h3>
+                            <span class="gallery-item-tag" data-fr="Jardin & Nature" data-en="Garden & Nature">Jardin &
+                                Nature</span>
                         </div>
                     </div>
                     <!-- Item 3: Wedding reception hall -->
                     <div class="gallery-item size-medium" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" alt="Salle de réception de mariage ultra-romantique décorée avec soin" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg"
+                            alt="Salle de réception de mariage ultra-romantique décorée avec soin" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Réception d'Exception</h3>
-                            <span class="gallery-item-tag">Prestige & Élégance</span>
+                            <h3 class="gallery-item-title" data-fr="Réception d'Exception"
+                                data-en="Exceptional Reception">Réception d'Exception</h3>
+                            <span class="gallery-item-tag" data-fr="Prestige & Élégance"
+                                data-en="Prestige & Elegance">Prestige & Élégance</span>
                         </div>
                     </div>
                     <!-- Item 4: Outdoor Provence dinner -->
                     <div class="gallery-item size-large" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" alt="Dîner de mariage en plein air sous les étoiles de Provence" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg"
+                            alt="Dîner de mariage en plein air sous les étoiles de Provence" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Dîner Provençal</h3>
-                            <span class="gallery-item-tag">Provence, France</span>
+                            <h3 class="gallery-item-title" data-fr="Dîner Provençal" data-en="Provence Dinner">Dîner
+                                Provençal</h3>
+                            <span class="gallery-item-tag" data-fr="Provence, France"
+                                data-en="Provence, France">Provence, France</span>
                         </div>
                     </div>
                     <!-- Item 5: Floral arch -->
                     <div class="gallery-item size-medium" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" alt="Arche florale sublime pour la pièce montée" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg"
+                            alt="Arche florale sublime pour la pièce montée" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">L'Arche en Fleurs</h3>
-                            <span class="gallery-item-tag">Décoration Florale</span>
+                            <h3 class="gallery-item-title" data-fr="L'Arche en Fleurs" data-en="Floral Arch">L'Arche en
+                                Fleurs</h3>
+                            <span class="gallery-item-tag" data-fr="Décoration Florale"
+                                data-en="Floral Decoration">Décoration Florale</span>
                         </div>
                     </div>
                     <!-- Item 6: Couple dance -->
                     <div class="gallery-item size-medium" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/71/fd/d8/71fdd8e1ba632b78c8df686ba32b7426.jpg" alt="Ouverture de bal du couple de mariés" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/71/fd/d8/71fdd8e1ba632b78c8df686ba32b7426.jpg"
+                            alt="Ouverture de bal du couple de mariés" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Ouverture de Bal</h3>
-                            <span class="gallery-item-tag">Danse & Célébration</span>
+                            <h3 class="gallery-item-title" data-fr="Ouverture de Bal" data-en="First Dance">Ouverture de
+                                Bal</h3>
+                            <span class="gallery-item-tag" data-fr="Danse & Célébration"
+                                data-en="Dance & Celebration">Danse & Célébration</span>
                         </div>
                     </div>
                 </div>
 
                 <div style="text-align: center; margin-top: 4rem;">
-                    <a href="portfolio.html" class="btn-primary">Voir toute la galerie</a>
+                    <a href="portfolio.html" class="btn-primary" data-fr="Voir toute la galerie"
+                        data-en="View Entire Gallery">Voir toute la galerie</a>
                 </div>
             </div>
         </section>
@@ -302,38 +393,60 @@
         <!-- 7. CINEMATIC VIDEO AMBIANCE SECTION -->
         <section class="video-ambiance-section" aria-label="Ambiance Vidéo">
             <div class="container">
-                <p class="editorial-subtitle">Instants Capturés</p>
-                <h2 class="editorial-title">Vivez la Magie</h2>
-                <p class="editorial-description">Plongez dans l'émotion de nos mariages à travers ces instants filmés avec amour.</p>
+                <p class="editorial-subtitle" data-fr="Instants Capturés" data-en="Captured Moments">Instants Capturés
+                </p>
+                <h2 class="editorial-title" data-fr="Vivez la Magie" data-en="Experience the Magic">Vivez la Magie</h2>
+                <p class="editorial-description"
+                    data-fr="Plongez dans l'émotion de nos mariages à travers ces instants filmés avec amour."
+                    data-en="Immerse yourself in the emotion of our weddings through these lovingly filmed moments.">
+                    Plongez dans l'émotion de nos mariages à travers ces instants filmés avec amour.</p>
             </div>
             <div class="video-strip">
                 <!-- Video 1: Wedding dance entrance -->
                 <div class="video-strip-item">
-                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg" class="strip-video">
-                        <source src="https://v1.pinimg.com/videos/mc/720p/fd/2c/7e/fd2c7eb7bb7c38d00f7ab72f9bcec3e4.mp4" type="video/mp4">
+                    <video autoplay muted loop playsinline
+                        poster="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg"
+                        class="strip-video">
+                        <source src="https://v1.pinimg.com/videos/mc/720p/fd/2c/7e/fd2c7eb7bb7c38d00f7ab72f9bcec3e4.mp4"
+                            type="video/mp4">
                     </video>
-                    <div class="video-strip-label">Entrée de la Mariée</div>
+                    <div class="video-strip-label" data-fr="Entrée de la Mariée" data-en="Bridal Entrance">Entrée de la
+                        Mariée</div>
                 </div>
                 <!-- Video 2: Outdoor Provence dinner -->
                 <div class="video-strip-item">
-                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" class="strip-video">
-                        <source src="https://v1.pinimg.com/videos/mc/720p/02/09/6a/02096a17f7af8ba4ad68ac999a42dbf6.mp4" type="video/mp4">
+                    <video autoplay muted loop playsinline
+                        poster="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg"
+                        class="strip-video">
+                        <source src="https://v1.pinimg.com/videos/mc/720p/02/09/6a/02096a17f7af8ba4ad68ac999a42dbf6.mp4"
+                            type="video/mp4">
                     </video>
-                    <div class="video-strip-label">Dîner sous les Étoiles</div>
+                    <div class="video-strip-label" data-fr="Dîner sous les Étoiles" data-en="Dinner Under the Stars">
+                        Dîner sous les Étoiles</div>
                 </div>
                 <!-- Video 3: Floral arch cake moment -->
                 <div class="video-strip-item">
-                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" class="strip-video">
-                        <source src="https://v1.pinimg.com/videos/iht/expMp4/df/4a/f0/df4af081e6573895fb16932172b5c432_720w.mp4" type="video/mp4">
+                    <video autoplay muted loop playsinline
+                        poster="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg"
+                        class="strip-video">
+                        <source
+                            src="https://v1.pinimg.com/videos/iht/expMp4/df/4a/f0/df4af081e6573895fb16932172b5c432_720w.mp4"
+                            type="video/mp4">
                     </video>
-                    <div class="video-strip-label">L'Arche Florale</div>
+                    <div class="video-strip-label" data-fr="L'Arche Florale" data-en="The Floral Arch">L'Arche Florale
+                    </div>
                 </div>
                 <!-- Video 4: Ultra-romantic reception -->
                 <div class="video-strip-item">
-                    <video autoplay muted loop playsinline poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" class="strip-video">
-                        <source src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4" type="video/mp4">
+                    <video autoplay muted loop playsinline
+                        poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg"
+                        class="strip-video">
+                        <source
+                            src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4"
+                            type="video/mp4">
                     </video>
-                    <div class="video-strip-label">Réception de Rêve</div>
+                    <div class="video-strip-label" data-fr="Réception de Rêve" data-en="Dream Reception">Réception de
+                        Rêve</div>
                 </div>
             </div>
         </section>
@@ -341,20 +454,26 @@
         <!-- 8. REVIEWS SECTION (Swiper Slider) -->
         <section class="reviews-section" aria-label="Avis Clients">
             <div class="container">
-                <p class="editorial-subtitle">Témoignages</p>
-                <h2 class="editorial-title">Mots Doux</h2>
-                
+                <p class="editorial-subtitle" data-fr="Témoignages" data-en="Testimonials">Témoignages</p>
+                <h2 class="editorial-title" data-fr="Mots Doux" data-en="Kind Words">Mots Doux</h2>
+
                 <div class="reviews-carousel swiper">
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide review-slide">
-                            <blockquote class="review-quote">
-                                "Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout était au-delà de nos rêves les plus fous. L'équipe a su gérer chaque imprévu avec une grâce absolue."
+                            <blockquote class="review-quote"
+                                data-fr='"Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout était au-delà de nos rêves les plus fous. L\'
+                                équipe a su gérer chaque imprévu avec une grâce absolue."'
+                                data-en='"Working with Ever After Events was the best decision of our wedding. Everything was beyond our wildest dreams. The team managed every unforeseen detail with absolute grace."'>
+                                "Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout
+                                était au-delà de nos rêves les plus fous. L'équipe a su gérer chaque imprévu avec une
+                                grâce absolue."
                             </blockquote>
                             <div class="review-author">
                                 <img src="images/founder.png" alt="Portrait de Sophie" class="review-avatar">
                                 <span class="review-name">Sophie & Julien</span>
-                                <span class="review-location">Château de Vaux-le-Vicomte, Paris</span>
+                                <span class="review-location" data-fr="Château de Vaux-le-Vicomte, Paris"
+                                    data-en="Vaux-le-Vicomte Castle, Paris">Château de Vaux-le-Vicomte, Paris</span>
                                 <div class="review-stars" aria-label="Note de 5 étoiles sur 5">
                                     <i data-lucide="star"></i>
                                     <i data-lucide="star"></i>
@@ -367,13 +486,20 @@
 
                         <!-- Slide 2 -->
                         <div class="swiper-slide review-slide">
-                            <blockquote class="review-quote">
-                                "Un sens du design extraordinaire, une coordination d'une précision chirurgicale, et pourtant, une douceur et une sérénité rassurantes tout au long de la planification. Magique."
+                            <blockquote class="review-quote"
+                                data-fr='"Un sens du design extraordinaire, une coordination d\' une précision
+                                chirurgicale, et pourtant, une douceur et une sérénité rassurantes tout au long de la
+                                planification. Magique."'
+                                data-en='"An extraordinary design sense, surgical precision coordination, and yet a reassuring sweetness and serenity throughout the planning. Magic."'>
+                                "Un sens du design extraordinaire, une coordination d'une précision chirurgicale, et
+                                pourtant, une douceur et une sérénité rassurantes tout au long de la planification.
+                                Magique."
                             </blockquote>
                             <div class="review-author">
                                 <img src="images/founder.png" alt="Portrait de Amara" class="review-avatar">
                                 <span class="review-name">Amara & David</span>
-                                <span class="review-location">Villa d'Este, Lac de Côme</span>
+                                <span class="review-location" data-fr="Villa d'Este, Lac de Côme"
+                                    data-en="Villa d'Este, Lake Como">Villa d'Este, Lac de Côme</span>
                                 <div class="review-stars" aria-label="Note de 5 étoiles sur 5">
                                     <i data-lucide="star"></i>
                                     <i data-lucide="star"></i>
@@ -384,7 +510,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Navigation Buttons -->
                     <button class="swiper-nav-btn swiper-nav-prev" aria-label="Avis précédent">
                         <i data-lucide="chevron-left"></i>
@@ -397,17 +523,24 @@
         </section>
 
         <!-- 8. HIGH-END CTA SECTION -->
-        <section class="contact-banner" style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
+        <section class="contact-banner"
+            style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
             <div class="container">
-                <p class="editorial-subtitle">Votre Voyage Commence Ici</p>
-                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);">Créons Ensemble Votre Plus Belle Histoire</h2>
-                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;">Commencer l'expérience</a>
+                <p class="editorial-subtitle" data-fr="Votre Voyage Commence Ici" data-en="Your Journey Begins Here">
+                    Votre Voyage Commence Ici</p>
+                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);"
+                    data-fr="Créons Ensemble Votre Plus Belle Histoire"
+                    data-en="Let us Create Your Most Beautiful Story Together">Créons Ensemble Votre Plus Belle Histoire
+                </h2>
+                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;"
+                    data-fr="Commencer l'expérience" data-en="Begin the experience">Commencer l'expérience</a>
             </div>
         </section>
     </main>
 
     <!-- Lightbox Modal container -->
-    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Agrandissement de l'image">
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true"
+        aria-label="Agrandissement de l'image">
         <button class="lightbox-close" aria-label="Fermer la vue agrandie">×</button>
         <div class="lightbox-content">
             <img src="" alt="" class="lightbox-img">
@@ -423,54 +556,70 @@
                         <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
                         <span class="logo-sub">Events</span>
                     </a>
-                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <p data-fr="Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige."
+                        data-en="International agency specializing in the design, planning, and scenography of exceptional weddings and prestigious receptions.">
+                        Agence internationale spécialisée dans la conception, la planification et la scénographie de
+                        mariages d'exception et réceptions de prestige.</p>
                     <div class="social-icons-footer">
                         <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col-links">
-                    <h4>L'Agence</h4>
+                    <h4 data-fr="L'Agence" data-en="The Agency">L'Agence</h4>
                     <ul class="footer-links-list">
-                        <li><a href="about.html">Notre Histoire</a></li>
-                        <li><a href="about.html#values">Nos Valeurs</a></li>
-                        <li><a href="portfolio.html">Nos Mariages</a></li>
-                        <li><a href="contact.html">Prendre Contact</a></li>
+                        <li><a href="about.html" data-fr="Notre Histoire" data-en="Our Story">Notre Histoire</a></li>
+                        <li><a href="about.html#values" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html" data-fr="Nos Mariages" data-en="Our Weddings">Nos Mariages</a></li>
+                        <li><a href="contact.html" data-fr="Prendre Contact" data-en="Get in Touch">Prendre Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer-col-links">
-                    <h4>Services</h4>
+                    <h4 data-fr="Services" data-en="Services">Services</h4>
                     <ul class="footer-links-list">
-                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
-                        <li><a href="services.html#decor">Scénographie</a></li>
-                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
-                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                        <li><a href="services.html#absolu" data-fr="Organisation A-Z"
+                                data-en="A-Z Planning">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor" data-fr="Scénographie" data-en="Scenography">Scénographie</a>
+                        </li>
+                        <li><a href="services.html#jourj" data-fr="Coordination Jour J"
+                                data-en="Day-of Coordination">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations" data-fr="Destinations de Luxe"
+                                data-en="Luxury Destinations">Destinations de Luxe</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col-contact">
-                    <h4>Conciergerie</h4>
+                    <h4 data-fr="Conciergerie" data-en="Concierge Service">Conciergerie</h4>
                     <div class="footer-contact-info">
-                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
-                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
-                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
-                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                        <span><i data-lucide="phone"></i> +229 01 42 10 01 56</span>
+                        <span><i data-lucide="mail"></i> eventafter@gmail.com</span>
+                        <span data-fr="Place Vendôme, 75001 Paris" data-en="Place Vendôme, 75001 Paris"><i
+                                data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/2290142100156" class="whatsapp-link"><i
+                                    data-lucide="message-square"></i> <span data-fr="WhatsApp VIP Direct"
+                                    data-en="WhatsApp VIP Direct">WhatsApp VIP Direct</span></a></span>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <p data-fr="&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité"
+                    data-en="&copy; 2026 Ever After Events. All rights reserved. Legal Notice | Privacy Policy">&copy;
+                    2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Cookies</a>
-                    <a href="#">Plan du site</a>
+                    <a href="#" data-fr="Cookies" data-en="Cookies">Cookies</a>
+                    <a href="#" data-fr="Plan du site" data-en="Sitemap">Plan du site</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot placeholder -->
+    <div id="chatbot-container"></div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
@@ -479,12 +628,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        // Init Lucide Icons
         lucide.createIcons();
     </script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="js/flower_fall.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/flower_fall.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/heroFallback.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
+
 </html>

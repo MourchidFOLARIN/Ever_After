@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/formWizard.css">
 </head>
 
 <body class="has-hero-video">
@@ -26,16 +29,18 @@
 
             <nav role="navigation">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="about.html" class="nav-link">À Propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
 
             <div class="header-cta">
-                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </div>
 
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
@@ -49,13 +54,15 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="index.html" class="mobile-nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-fr="Services" data-en="Services">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+            </li>
+            <li><a href="about.html" class="mobile-nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
             <li style="margin-top: 2rem;">
-                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;" data-fr="Prendre RDV"
+                    data-en="Book an Appt">Prendre RDV</a>
             </li>
         </ul>
     </div>
@@ -64,19 +71,23 @@
         <!-- Subpage Header Banner -->
         <section class="subpage-hero"
             style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/736x/0e/17/75/0e177563525b621c48ea8adf77964136.jpg') center/cover no-repeat;">
-            >
             <div class="container">
-                <p class="editorial-subtitle" style="color: var(--color-gold);">Consultation Privée</p>
+                <p class="editorial-subtitle" style="color: var(--color-gold);" data-fr="Consultation Privée"
+                    data-en="Private Consultation">Consultation Privée</p>
                 <h1 class="editorial-title"
-                    style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;">
+                    style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;"
+                    data-fr="Concevons Votre Histoire" data-en="Let us Design Your Story">
                     Concevons Votre Histoire</h1>
-                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;">Notre
+                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;"
+                    data-fr="Notre conciergerie est à votre disposition pour imaginer les contours de votre futur événement. Remplissez notre formulaire RSVP exclusif."
+                    data-en="Our concierge service is at your disposal to shape your future event. Fill out our exclusive RSVP form.">
+                    Notre
                     conciergerie est à votre disposition pour imaginer les contours de votre futur événement. Remplissez
                     notre formulaire RSVP exclusif.</p>
             </div>
 
             <div class="scroll-indicator">
-                <span>Faire Défiler</span>
+                <span data-fr="Faire Défiler" data-en="Scroll Down">Faire Défiler</span>
                 <div class="scroll-line"></div>
             </div>
         </section>
@@ -88,85 +99,148 @@
 
                     <!-- RSVP Inquiry Form -->
                     <div class="rsvp-form-container">
-                        <h2 class="rsvp-title">Votre Projet de Célébration</h2>
-                        <p class="rsvp-subtitle">Merci de nous confier vos aspirations. Un membre de notre équipe vous
+                        <h2 class="rsvp-title" data-fr="Votre Projet de Célébration" data-en="Your Celebration Project">
+                            Votre Projet de Célébration</h2>
+                        <p class="rsvp-subtitle"
+                            data-fr="Merci de nous confier vos aspirations. Un membre de notre équipe vous contactera sous 24 heures."
+                            data-en="Thank you for sharing your aspirations. A member of our team will contact you within 24 hours.">
+                            Merci de nous confier vos aspirations. Un membre de notre équipe vous
                             contactera sous 24 heures.</p>
 
-                        <form class="rsvp-form" action="#" method="POST"
-                            onsubmit="event.preventDefault(); alert('Votre demande VIP a été enregistrée. Ever After Events vous remercie.');">
+                        <!-- Progress Indicator -->
+                        <div class="wizard-progress">
+                            <div class="wizard-step-indicator active">1</div>
+                            <div class="wizard-step-indicator">2</div>
+                            <div class="wizard-step-indicator">3</div>
+                        </div>
 
-                            <!-- Nom -->
-                            <div class="rsvp-input-group">
-                                <input type="text" id="fullname" name="fullname" class="rsvp-input" placeholder=" "
-                                    required>
-                                <label for="fullname" class="rsvp-label">Nom Complet</label>
+                        <form class="rsvp-form" id="rsvpForm" action="#" method="POST">
+
+                            <!-- STEP 1: Date & Location -->
+                            <div class="wizard-step active">
+                                <!-- Date de l'événement -->
+                                <div class="rsvp-input-group">
+                                    <input type="text" id="eventdate" name="eventdate" class="rsvp-input"
+                                        placeholder=" " onfocus="this.type='date'"
+                                        onblur="if(!this.value) this.type='text'">
+                                    <label for="eventdate" class="rsvp-label" data-fr="Date Souhaitée"
+                                        data-en="Desired Date">Date Souhaitée</label>
+                                </div>
+
+                                <!-- Lieu envisagé -->
+                                <div class="rsvp-input-group">
+                                    <input type="text" id="location" name="location" class="rsvp-input" placeholder=" ">
+                                    <label for="location" class="rsvp-label" data-fr="Lieu Envisagé (Ville, Pays)"
+                                        data-en="Desired Location (City, Country)">Lieu Envisagé (Ville, Pays)</label>
+                                </div>
+
+                                <!-- Service recherché -->
+                                <div class="rsvp-input-group select-wrapper">
+                                    <select id="service" name="service" class="rsvp-input" required>
+                                        <option value="" disabled selected hidden> </option>
+                                        <option value="absolu" data-fr="L'Absolu (Organisation A-Z)"
+                                            data-en="The Absolute (Full A-Z Planning)">L'Absolu (Organisation A-Z)
+                                        </option>
+                                        <option value="decor" data-fr="L'Esthétique (Scénographie & Design)"
+                                            data-en="The Aesthetics (Scenography & Design)">L'Esthétique (Scénographie &
+                                            Design)</option>
+                                        <option value="jourj" data-fr="Le Jour J (Coordination finale)"
+                                            data-en="The Wedding Day (Day-of Coordination)">Le Jour J (Coordination
+                                            finale)</option>
+                                    </select>
+                                    <label for="service" class="rsvp-label" data-fr="Prestation Souhaitée"
+                                        data-en="Desired Service">Prestation Souhaitée</label>
+                                </div>
                             </div>
 
-                            <!-- Email -->
-                            <div class="rsvp-input-group">
-                                <input type="email" id="email" name="email" class="rsvp-input" placeholder=" " required>
-                                <label for="email" class="rsvp-label">Adresse Email</label>
+                            <!-- STEP 2: Guest Count & Budget -->
+                            <div class="wizard-step">
+                                <!-- Nombre d'invités -->
+                                <div class="rsvp-input-group select-wrapper">
+                                    <select id="guests" name="guests" class="rsvp-input" required>
+                                        <option value="" disabled selected hidden> </option>
+                                        <option value="intime" data-fr="Mariage Intime (Moins de 50)"
+                                            data-en="Intimate Wedding (Under 50)">Mariage Intime (Moins de 50)</option>
+                                        <option value="moyen" data-fr="Prestige (50 à 150)"
+                                            data-en="Prestige Wedding (50 to 150)">Prestige (50 à 150)</option>
+                                        <option value="grand" data-fr="Grandeur (Plus de 150)"
+                                            data-en="Grandeur Wedding (Over 150)">Grandeur (Plus de 150)</option>
+                                    </select>
+                                    <label for="guests" class="rsvp-label" data-fr="Nombre d'Invités"
+                                        data-en="Number of Guests">Nombre d'Invités</label>
+                                </div>
+
+                                <!-- Enveloppe budgétaire -->
+                                <div class="rsvp-input-group select-wrapper">
+                                    <select id="budget" name="budget" class="rsvp-input">
+                                        <option value="" disabled selected hidden> </option>
+                                        <option value="luxury" data-fr="Budget Prestige (50k€ - 100k€)"
+                                            data-en="Prestige Budget (€50k - €100k)">Budget Prestige (50k€ - 100k€)
+                                        </option>
+                                        <option value="exclusive" data-fr="Budget D'Exception (100k€ - 250k€)"
+                                            data-en="Exceptional Budget (€100k - €250k)">Budget D'Exception (100k€ -
+                                            250k€)</option>
+                                        <option value="royal" data-fr="Majestueux (Plus de 250k€)"
+                                            data-en="Royal Budget (Over €250k)">Majestueux (Plus de 250k€)</option>
+                                    </select>
+                                    <label for="budget" class="rsvp-label" data-fr="Enveloppe Budgétaire"
+                                        data-en="Estimated Budget">Enveloppe Budgétaire</label>
+                                </div>
                             </div>
 
-                            <!-- Téléphone -->
-                            <div class="rsvp-input-group">
-                                <input type="tel" id="phone" name="phone" class="rsvp-input" placeholder=" " required>
-                                <label for="phone" class="rsvp-label">Téléphone</label>
+                            <!-- STEP 3: Contact & Message -->
+                            <div class="wizard-step">
+                                <!-- Nom -->
+                                <div class="rsvp-input-group">
+                                    <input type="text" id="fullname" name="fullname" class="rsvp-input" placeholder=" "
+                                        required>
+                                    <label for="fullname" class="rsvp-label" data-fr="Nom Complet"
+                                        data-en="Full Name">Nom Complet</label>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="rsvp-input-group">
+                                    <input type="email" id="email" name="email" class="rsvp-input" placeholder=" "
+                                        required>
+                                    <label for="email" class="rsvp-label" data-fr="Adresse Email"
+                                        data-en="Email Address">Adresse Email</label>
+                                </div>
+
+                                <!-- Téléphone -->
+                                <div class="rsvp-input-group">
+                                    <input type="tel" id="phone" name="phone" class="rsvp-input" placeholder=" "
+                                        required>
+                                    <label for="phone" class="rsvp-label" data-fr="Téléphone"
+                                        data-en="Phone Number">Téléphone</label>
+                                </div>
+
+                                <!-- Rêves et inspirations -->
+                                <div class="rsvp-input-group form-group-full">
+                                    <textarea id="message" name="message" class="rsvp-input" rows="4" placeholder=" "
+                                        style="resize: none;"></textarea>
+                                    <label for="message" class="rsvp-label"
+                                        data-fr="Décrivez-nous vos envies les plus folles..."
+                                        data-en="Describe your wildest dreams...">Décrivez-nous vos envies les plus
+                                        folles...</label>
+                                </div>
                             </div>
 
-                            <!-- Date de l'événement -->
-                            <div class="rsvp-input-group">
-                                <input type="text" id="eventdate" name="eventdate" class="rsvp-input" placeholder=" "
-                                    onfocus="this.type='date'" onblur="if(!this.value) this.type='text'">
-                                <label for="eventdate" class="rsvp-label">Date Souhaitée</label>
-                            </div>
-
-                            <!-- Nombre d'invités -->
-                            <div class="rsvp-input-group select-wrapper">
-                                <select id="guests" name="guests" class="rsvp-input" required>
-                                    <option value="" disabled selected hidden> </option>
-                                    <option value="intime">Mariage Intime (Moins de 50)</option>
-                                    <option value="moyen">Prestige (50 à 150)</option>
-                                    <option value="grand">Grandeur (Plus de 150)</option>
-                                </select>
-                                <label for="guests" class="rsvp-label">Nombre d'Invités</label>
-                            </div>
-
-                            <!-- Lieu envisagé -->
-                            <div class="rsvp-input-group">
-                                <input type="text" id="location" name="location" class="rsvp-input" placeholder=" ">
-                                <label for="location" class="rsvp-label">Lieu Envisagé (Ville, Pays)</label>
-                            </div>
-
-                            <!-- Service recherché -->
-                            <div class="rsvp-input-group select-wrapper form-group-full">
-                                <select id="service" name="service" class="rsvp-input" required>
-                                    <option value="" disabled selected hidden> </option>
-                                    <option value="absolu">L'Absolu (Organisation A-Z)</option>
-                                    <option value="decor">L'Esthétique (Scénographie & Design)</option>
-                                    <option value="jourj">Le Jour J (Coordination finale)</option>
-                                </select>
-                                <label for="service" class="rsvp-label">Prestation Souhaitée</label>
-                            </div>
-
-                            <!-- Rêves et inspirations -->
-                            <div class="rsvp-input-group form-group-full">
-                                <textarea id="message" name="message" class="rsvp-input" rows="4" placeholder=" "
-                                    style="resize: none;"></textarea>
-                                <label for="message" class="rsvp-label">Décrivez-nous vos envies les plus
-                                    folles...</label>
-                            </div>
-
-                            <div class="form-group-full" style="margin-top: 1rem;">
-                                <button type="submit" class="btn-primary" style="width: 100%;">Envoyer l'invitation
-                                    <span class="btn-icon">→</span></button>
+                            <!-- Navigation buttons -->
+                            <div class="wizard-buttons">
+                                <button type="button" class="btn-secondary btn-back" data-fr="Retour"
+                                    data-en="Back">Retour</button>
+                                <button type="button" class="btn-primary btn-next" data-fr="Continuer"
+                                    data-en="Continue">Continuer <span class="btn-icon">→</span></button>
+                                <button type="submit" class="btn-primary btn-submit" style="display: none;"
+                                    data-fr="Envoyer l'invitation" data-en="Send Invitation">Envoyer l'invitation <span
+                                        class="btn-icon">→</span></button>
                             </div>
                         </form>
                     </div>
 
                     <!-- Direct VIP Channels & Hours -->
                     <div class="contact-info-panel">
-                        <h3>Conciergerie</h3>
+                        <h3 data-fr="Conciergerie" data-en="Concierge Service">Conciergerie</h3>
 
                         <div class="contact-channels">
                             <!-- Channel 1: VIP Line -->
@@ -175,8 +249,8 @@
                                     <i data-lucide="phone"></i>
                                 </div>
                                 <div>
-                                    <h4 class="channel-title">VIP Direct</h4>
-                                    <div class="channel-value">+33 1 40 00 00 00</div>
+                                    <h4 class="channel-title" data-fr="VIP Direct" data-en="VIP Direct">VIP Direct</h4>
+                                    <div class="channel-value">+229 01 42 10 01 56</div>
                                 </div>
                             </div>
 
@@ -186,8 +260,9 @@
                                     <i data-lucide="mail"></i>
                                 </div>
                                 <div>
-                                    <h4 class="channel-title">Adresse Email</h4>
-                                    <div class="channel-value">conciergerie@everafterevents.com</div>
+                                    <h4 class="channel-title" data-fr="Adresse Email" data-en="Email Address">Adresse
+                                        Email</h4>
+                                    <div class="channel-value">eventafter@gmail.com</div>
                                 </div>
                             </div>
 
@@ -197,10 +272,12 @@
                                     <i data-lucide="message-circle"></i>
                                 </div>
                                 <div>
-                                    <h4 class="channel-title" style="color: #25D366;">WhatsApp VIP</h4>
+                                    <h4 class="channel-title" style="color: #25D366;" data-fr="WhatsApp VIP"
+                                        data-en="WhatsApp VIP">WhatsApp VIP</h4>
                                     <div class="channel-value">
-                                        <a href="https://wa.me/33140000000" class="whatsapp-link" target="_blank"
-                                            rel="noopener noreferrer">Lancer la discussion</a>
+                                        <a href="https://wa.me/2290142100156" class="whatsapp-link" target="_blank"
+                                            rel="noopener noreferrer" data-fr="Lancer la discussion"
+                                            data-en="Start Discussion">Lancer la discussion</a>
                                     </div>
                                 </div>
                             </div>
@@ -209,21 +286,27 @@
                         <!-- Consultation hours -->
                         <div class="consultation-hours"
                             style="border-top: 1px solid var(--color-border); padding-top: 2rem; margin-bottom: 2rem;">
-                            <h4
-                                style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); font-weight: 600; margin-bottom: 1rem;">
+                            <h4 style="font-family: var(--font-sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); font-weight: 600; margin-bottom: 1rem;"
+                                data-fr="Disponibilités" data-en="Availability">
                                 Disponibilités</h4>
-                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--color-dark);">Uniquement
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--color-dark);"
+                                data-fr="Uniquement sur rendez-vous privé." data-en="By private appointment only.">
+                                Uniquement
                                 sur rendez-vous privé.</p>
-                            <p style="font-size: 0.9rem; color: var(--color-gray);">Du Lundi au Samedi : 09h00 - 19h00
+                            <p style="font-size: 0.9rem; color: var(--color-gray);"
+                                data-fr="Du Lundi au Samedi : 09h00 - 19h00"
+                                data-en="Monday to Saturday: 9:00 AM - 7:00 PM">Du Lundi au Samedi : 09h00 - 19h00
                             </p>
                         </div>
 
                         <div class="social-connect">
-                            <h4>Nous suivre</h4>
+                            <h4 data-fr="Nous suivre" data-en="Follow Us">Nous suivre</h4>
                             <div class="social-links">
-                                <a href="#" class="social-link-item">Instagram</a>
-                                <a href="#" class="social-link-item">Pinterest</a>
-                                <a href="#" class="social-link-item">Facebook</a>
+                                <a href="#" class="social-link-item" data-fr="Instagram"
+                                    data-en="Instagram">Instagram</a>
+                                <a href="#" class="social-link-item" data-fr="Pinterest"
+                                    data-en="Pinterest">Pinterest</a>
+                                <a href="#" class="social-link-item" data-fr="Facebook" data-en="Facebook">Facebook</a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +335,9 @@
                         <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
                         <span class="logo-sub">Events</span>
                     </a>
-                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de
+                    <p data-fr="Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige."
+                        data-en="International agency specializing in the design, planning, and scenography of exceptional weddings and prestigious receptions.">
+                        Agence internationale spécialisée dans la conception, la planification et la scénographie de
                         mariages d'exception et réceptions de prestige.</p>
                     <div class="social-icons-footer">
                         <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
@@ -262,43 +347,51 @@
                 </div>
 
                 <div class="footer-col-links">
-                    <h4>L'Agence</h4>
+                    <h4 data-fr="L'Agence" data-en="The Agency">L'Agence</h4>
                     <ul class="footer-links-list">
-                        <li><a href="about.html">Notre Histoire</a></li>
-                        <li><a href="about.html#values">Nos Valeurs</a></li>
-                        <li><a href="portfolio.html">Nos Mariages</a></li>
-                        <li><a href="contact.html">Prendre Contact</a></li>
+                        <li><a href="about.html" data-fr="Notre Histoire" data-en="Our Story">Notre Histoire</a></li>
+                        <li><a href="about.html#values" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html" data-fr="Nos Mariages" data-en="Our Weddings">Nos Mariages</a></li>
+                        <li><a href="contact.html" data-fr="Prendre Contact" data-en="Get in Touch">Prendre Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer-col-links">
-                    <h4>Services</h4>
+                    <h4 data-fr="Services" data-en="Services">Services</h4>
                     <ul class="footer-links-list">
-                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
-                        <li><a href="services.html#decor">Scénographie</a></li>
-                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
-                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                        <li><a href="services.html#absolu" data-fr="Organisation A-Z"
+                                data-en="A-Z Planning">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor" data-fr="Scénographie" data-en="Scenography">Scénographie</a>
+                        </li>
+                        <li><a href="services.html#jourj" data-fr="Coordination Jour J"
+                                data-en="Day-of Coordination">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations" data-fr="Destinations de Luxe"
+                                data-en="Luxury Destinations">Destinations de Luxe</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col-contact">
-                    <h4>Conciergerie</h4>
+                    <h4 data-fr="Conciergerie" data-en="Concierge Service">Conciergerie</h4>
                     <div class="footer-contact-info">
-                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
-                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
-                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
-                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i
-                                    data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                        <span><i data-lucide="phone"></i> +229 01 42 10 01 56</span>
+                        <span><i data-lucide="mail"></i> eventafter@gmail.com</span>
+                        <span data-fr="Place Vendôme, 75001 Paris" data-en="Place Vendôme, 75001 Paris"><i
+                                data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/2290142100156" class="whatsapp-link"><i
+                                    data-lucide="message-square"></i> <span data-fr="WhatsApp VIP Direct"
+                                    data-en="WhatsApp VIP Direct">WhatsApp VIP Direct</span></a></span>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité
-                </p>
+                <p data-fr="&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité"
+                    data-en="&copy; 2026 Ever After Events. All rights reserved. Legal Notice | Privacy Policy">&copy;
+                    2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Cookies</a>
-                    <a href="#">Plan du site</a>
+                    <a href="#" data-fr="Cookies" data-en="Cookies">Cookies</a>
+                    <a href="#" data-fr="Plan du site" data-en="Sitemap">Plan du site</a>
                 </div>
             </div>
         </div>
@@ -314,6 +407,10 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/formWizard.js"></script>
 </body>
 
 </html>

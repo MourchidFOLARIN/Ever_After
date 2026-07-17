@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Portfolio | Ever After Events</title>
-    <meta name="description" content="Découvrez nos plus belles réalisations. Des mariages de luxe et réceptions sur mesure organisés dans des lieux d'exception en Europe.">
-    
+    <meta name="description"
+        content="Découvrez nos plus belles réalisations. Des mariages de luxe et réceptions sur mesure organisés dans des lieux d'exception en Europe.">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/lang.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 </head>
+
 <body class="has-hero-video">
 
     <!-- Header Navigation -->
@@ -20,19 +25,21 @@
                 <span class="logo-main">Ever After</span>
                 <span class="logo-sub">Events</span>
             </a>
-            
+
             <nav role="navigation">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="about.html" class="nav-link">À Propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link" data-fr="Services" data-en="Services">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
 
             <div class="header-cta">
-                <a href="contact.html" class="btn-primary">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </div>
 
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de navigation" aria-expanded="false">
@@ -46,28 +53,39 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
-            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
-            <li><a href="about.html" class="mobile-nav-link">À Propos</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="index.html" class="mobile-nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-fr="Services" data-en="Services">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link" data-fr="Portfolio" data-en="Portfolio">Portfolio</a>
+            </li>
+            <li><a href="about.html" class="mobile-nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
             <li style="margin-top: 2rem;">
-                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;">Prendre RDV</a>
+                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;" data-fr="Prendre RDV"
+                    data-en="Book an Appt">Prendre RDV</a>
             </li>
         </ul>
     </div>
 
     <main id="main-content">
         <!-- Subpage Header Banner -->
-        <section class="subpage-hero" style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg') center/cover no-repeat;">
+        <section class="subpage-hero"
+            style="background: linear-gradient(rgba(17,17,17,0.5), rgba(17,17,17,0.5)), url('https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg') center/cover no-repeat;">
             <div class="container">
-                <p class="editorial-subtitle" style="color: var(--color-gold);">Nos Réalisations</p>
-                <h1 class="editorial-title" style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;">Histoires d'Amour Singulières</h1>
-                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;">Plongez au cœur de nos plus belles réceptions de luxe. Chaque mariage est un chef-d'œuvre éphémère conçu pour l'éternité.</p>
+                <p class="editorial-subtitle" style="color: var(--color-gold);" data-fr="Nos Réalisations"
+                    data-en="Our Portfolio">Nos Réalisations</p>
+                <h1 class="editorial-title"
+                    style="color: var(--color-bg-light); font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 1rem;"
+                    data-fr="Histoires d'Amour Singulières" data-en="Singular Love Stories">Histoires d'Amour
+                    Singulières</h1>
+                <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85); font-weight: 300;"
+                    data-fr="Plongez au cœur de nos plus belles réceptions de luxe. Chaque mariage est un chef-d'œuvre éphémère conçu pour l'éternité."
+                    data-en="Dive into the heart of our most beautiful luxury receptions. Each wedding is an ephemeral masterpiece designed for eternity.">
+                    Plongez au cœur de nos plus belles réceptions de luxe. Chaque mariage est un chef-d'œuvre éphémère
+                    conçu pour l'éternité.</p>
             </div>
-            
+
             <div class="scroll-indicator">
-                <span>Faire Défiler</span>
+                <span data-fr="Faire Défiler" data-en="Scroll Down">Faire Défiler</span>
                 <div class="scroll-line"></div>
             </div>
         </section>
@@ -75,117 +93,171 @@
         <!-- Portfolio Filtering & Masonry Grid Section -->
         <section class="portfolio-gallery-section" aria-label="Galerie interactive">
             <div class="container">
-                
+
                 <div class="gallery-filters">
-                    <button class="filter-btn active" data-filter="all">Toutes nos célébrations</button>
-                    <button class="filter-btn" data-filter="chateau">Châteaux de France</button>
-                    <button class="filter-btn" data-filter="lac">Lacs & Côtes</button>
+                    <button class="filter-btn active" data-filter="all" data-fr="Toutes nos célébrations"
+                        data-en="All Celebrations">Toutes nos célébrations</button>
+                    <button class="filter-btn" data-filter="chateau" data-fr="Châteaux de France"
+                        data-en="Châteaux of France">Châteaux de France</button>
+                    <button class="filter-btn" data-filter="lac" data-fr="Lacs & Côtes" data-en="Lakes & Coasts">Lacs &
+                        Côtes</button>
                 </div>
 
                 <div class="masonry-grid">
                     <!-- Case Study 1: First Look -->
                     <div class="gallery-item size-medium" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg" alt="Premier regard émouvant entre les mariés" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg"
+                            alt="Premier regard émouvant entre les mariés" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Le Premier Regard</h3>
-                            <span class="gallery-item-tag">Moment Éternel (Prestige)</span>
+                            <h3 class="gallery-item-title" data-fr="Le Premier Regard" data-en="First Look">Le Premier
+                                Regard</h3>
+                            <span class="gallery-item-tag" data-fr="Moment Éternel (Prestige)"
+                                data-en="Eternal Moment (Prestige)">Moment Éternel (Prestige)</span>
                         </div>
                     </div>
 
                     <!-- Case Study 2: Outdoor ceremony -->
                     <div class="gallery-item size-large" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg" alt="Cérémonie en plein air avec arche blanche florale" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/b5/7f/82/b57f82b29b6a5901a81945f2332aa225.jpg"
+                            alt="Cérémonie en plein air avec arche blanche florale" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Cérémonie en Plein Air</h3>
-                            <span class="gallery-item-tag">Jardin & Nature</span>
+                            <h3 class="gallery-item-title" data-fr="Cérémonie en Plein Air" data-en="Outdoor Ceremony">
+                                Cérémonie en Plein Air</h3>
+                            <span class="gallery-item-tag" data-fr="Jardin & Nature" data-en="Garden & Nature">Jardin &
+                                Nature</span>
                         </div>
                     </div>
 
                     <!-- Case Study 3: Reception hall -->
                     <div class="gallery-item size-medium" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" alt="Salle de réception ultra-romantique décorée" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg"
+                            alt="Salle de réception ultra-romantique décorée" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Réception d'Exception</h3>
-                            <span class="gallery-item-tag">Prestige & Élégance</span>
+                            <h3 class="gallery-item-title" data-fr="Réception d'Exception"
+                                data-en="Exceptional Reception">Réception d'Exception</h3>
+                            <span class="gallery-item-tag" data-fr="Prestige & Élégance"
+                                data-en="Prestige & Elegance">Prestige & Élégance</span>
                         </div>
                     </div>
 
                     <!-- Case Study 4: Provence outdoor dinner -->
                     <div class="gallery-item size-large" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg" alt="Dîner de mariage sous les étoiles de Provence" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/46/0e/74/460e74593bf3c1f41a5a99eb8a72fef8.jpg"
+                            alt="Dîner de mariage sous les étoiles de Provence" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Dîner Provençal</h3>
-                            <span class="gallery-item-tag">Provence, France</span>
+                            <h3 class="gallery-item-title" data-fr="Dîner Provençal" data-en="Provence Dinner">Dîner
+                                Provençal</h3>
+                            <span class="gallery-item-tag" data-fr="Provence, France"
+                                data-en="Provence, France">Provence, France</span>
                         </div>
                     </div>
 
                     <!-- Case Study 5: Floral arch -->
                     <div class="gallery-item size-medium" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg" alt="Arche florale sublime pour la pièce montée" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg"
+                            alt="Arche florale sublime pour la pièce montée" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">L'Arche en Fleurs</h3>
-                            <span class="gallery-item-tag">Décoration Florale</span>
+                            <h3 class="gallery-item-title" data-fr="L'Arche en Fleurs" data-en="Floral Arch">L'Arche en
+                                Fleurs</h3>
+                            <span class="gallery-item-tag" data-fr="Décoration Florale"
+                                data-en="Floral Decoration">Décoration Florale</span>
                         </div>
                     </div>
 
                     <!-- Case Study 6: Dance/couple -->
                     <div class="gallery-item size-medium" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/71/fd/d8/71fdd8e1ba632b78c8df686ba32b7426.jpg" alt="Ouverture de bal romantique" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/71/fd/d8/71fdd8e1ba632b78c8df686ba32b7426.jpg"
+                            alt="Ouverture de bal romantique" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Ouverture de Bal</h3>
-                            <span class="gallery-item-tag">Danse & Célébration</span>
+                            <h3 class="gallery-item-title" data-fr="Ouverture de Bal" data-en="First Dance">Ouverture de
+                                Bal</h3>
+                            <span class="gallery-item-tag" data-fr="Danse & Célébration"
+                                data-en="Dance & Celebration">Danse & Célébration</span>
                         </div>
                     </div>
 
                     <!-- Case Study 7: Civil wedding garden -->
                     <div class="gallery-item size-medium" data-category="exterieur">
-                        <img src="https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg" alt="Mariage civil dans un beau jardin" loading="lazy">
+                        <img src="https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg"
+                            alt="Mariage civil dans un beau jardin" loading="lazy">
                         <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Mariage Civil & Jardin</h3>
-                            <span class="gallery-item-tag">Extérieur & Nature</span>
+                            <h3 class="gallery-item-title" data-fr="Mariage Civil & Jardin"
+                                data-en="Civil Wedding & Garden">Mariage Civil & Jardin</h3>
+                            <span class="gallery-item-tag" data-fr="Extérieur & Nature"
+                                data-en="Outdoor & Nature">Extérieur <!-- Case Study 8: Wedding dance -->
+                                <div class="gallery-item size-large" data-category="chateau">
+                                    <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg"
+                                        alt="Entrée de la mariée en robe de bal" loading="lazy">
+                                    <div class="gallery-overlay">
+                                        <h3 class="gallery-item-title" data-fr="Entrée de la Mariée"
+                                            data-en="Bridal Entrance">Entrée de la Mariée</h3>
+                                        <span class="gallery-item-tag" data-fr="Cérémonie & Émotion"
+                                            data-en="Ceremony & Emotion">Cérémonie & Émotion</span>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
 
-                    <!-- Case Study 8: Wedding dance -->
-                    <div class="gallery-item size-large" data-category="chateau">
-                        <img src="https://i.pinimg.com/736x/d0/69/b4/d069b4ae36eaba20a58231d786a5a323.jpg" alt="Entrée de la mariée en robe de bal" loading="lazy">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-item-title">Entrée de la Mariée</h3>
-                            <span class="gallery-item-tag">Cérémonie & Émotion</span>
-                        </div>
                     </div>
-                </div>
-
-            </div>
         </section>
 
 
         <!-- Case Stories Narratives -->
         <section class="portfolio-stories" style="background-color: var(--color-bg-beige);">
             <div class="container">
-                <p class="editorial-subtitle">Dans les Coulisses de l'Exception</p>
-                <h2 class="editorial-title">Récits de Célébration</h2>
-                
+                <p class="editorial-subtitle" data-fr="Dans les Coulisses de l'Exception"
+                    data-en="Behind the Scenes of the Exceptional">Dans les Coulisses de l'Exception</p>
+                <h2 class="editorial-title" data-fr="Récits de Célébration" data-en="Celebration Stories">Récits de
+                    Célébration</h2>
+
                 <!-- Story 1 -->
                 <div class="editorial-grid" style="margin-bottom: 8rem; align-items: center;">
                     <div class="editorial-img-wrapper">
                         <img src="images/portfolio_paris.png" alt="Couples wedding at French Château">
                     </div>
                     <div class="editorial-content-block">
-                        <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; color: var(--color-gold); letter-spacing: 0.15em;">Vaux-le-Vicomte, France</span>
-                        <h3 style="font-size: 2.2rem; margin: 0.5rem 0 1.5rem 0;">Romance Baroque sous les Étoiles</h3>
-                        <p><strong>L'Histoire :</strong> Notre couple souhaitait offrir à ses 200 convives venus des quatre coins du monde une immersion totale dans la grandeur française du XVIIe siècle. Le défi consistait à illuminer le château exclusivement à la bougie, recréant l'ambiance des grandes fêtes royales de l'époque.</p>
-                        <p><strong>Le Résultat :</strong> Plus de 2000 bougies disposées dans les jardins à la française, une arche florale suspendue de 4 mètres de hauteur, et un spectacle pyrotechnique magistral pour clôturer la soirée au rythme d'un orchestre philharmonique en direct.</p>
+                        <span
+                            style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; color: var(--color-gold); letter-spacing: 0.15em;"
+                            data-fr="Vaux-le-Vicomte, France" data-en="Vaux-le-Vicomte, France">Vaux-le-Vicomte,
+                            France</span>
+                        <h3 style="font-size: 2.2rem; margin: 0.5rem 0 1.5rem 0;"
+                            data-fr="Romance Baroque sous les Étoiles" data-en="Baroque Romance Under the Stars">Romance
+                            Baroque sous les Étoiles</h3>
+                        <p data-fr="L'Histoire : Notre couple souhaitait offrir à ses 200 convives venus des quatre coins du monde une immersion totale dans la grandeur française du XVIIe siècle. Le défi consistait à illuminer le château exclusivement à la bougie, recréant l'ambiance des grandes fêtes royales de l'époque."
+                            data-en="The Story: Our couple wished to offer their 200 guests from around the world a total immersion in 17th-century French grandeur. The challenge was to illuminate the castle solely with candlelight, recreating the atmosphere of the great royal celebrations of the era.">
+                            <strong>L'Histoire :</strong> Notre couple souhaitait offrir à ses 200 convives venus des
+                            quatre coins du monde une immersion totale dans la grandeur française du XVIIe siècle. Le
+                            défi consistait à illuminer le château exclusivement à la bougie, recréant l'ambiance des
+                            grandes fêtes royales de l'époque.
+                        </p>
+                        <p data-fr="Le Résultat : Plus de 2000 bougies disposées dans les jardins à la française, une arche florale suspendue de 4 mètres de hauteur, et un spectacle pyrotechnique magistral pour clôturer la soirée au rythme d'un orchestre philharmonique en direct."
+                            data-en="The Result: Over 2000 candles arranged in the French gardens, a 4-meter-high suspended floral arch, and a masterly fireworks display to close the evening to the rhythm of a live philharmonic orchestra.">
+                            <strong>Le Résultat :</strong> Plus de 2000 bougies disposées dans les jardins à la
+                            française, une arche florale suspendue de 4 mètres de hauteur, et un spectacle pyrotechnique
+                            magistral pour clôturer la soirée au rythme d'un orchestre philharmonique en direct.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Story 2 -->
                 <div class="editorial-grid" style="align-items: center;">
                     <div class="editorial-content-block" style="order: 2;">
-                        <span style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; color: var(--color-gold); letter-spacing: 0.15em;">Lac de Côme, Italie</span>
-                        <h3 style="font-size: 2.2rem; margin: 0.5rem 0 1.5rem 0;">Poésie au Fil de l'Eau</h3>
-                        <p><strong>L'Histoire :</strong> Un couple new-yorkais rêvait d'une union intime, poétique et hors du temps au bord du lac de Côme. L'accent a été mis sur la fluidité, la lumière naturelle golden hour et l'authenticité italienne (La Dolce Vita).</p>
-                        <p><strong>Le Résultat :</strong> Une cérémonie sur l'eau entourée de glycines blanches et de roses poudrées, une arrivée spectaculaire des mariés en bateau Riva en acajou classique, suivie d'un banquet aux chandelles sur la terrasse panoramique de la Villa d'Este.</p>
+                        <span
+                            style="font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; color: var(--color-gold); letter-spacing: 0.15em;"
+                            data-fr="Lac de Côme, Italie" data-en="Lake Como, Italy">Lac de Côme, Italie</span>
+                        <h3 style="font-size: 2.2rem; margin: 0.5rem 0 1.5rem 0;" data-fr="Poésie au Fil de l'Eau"
+                            data-en="Poetry by the Water">Poésie au Fil de l'Eau</h3>
+                        <p data-fr="L'Histoire : Un couple new-yorkais rêvait d'une union intime, poétique et hors du temps au bord du lac de Côme. L'accent a été mis sur la fluidité, la lumière naturelle golden hour et l'authenticité italienne (La Dolce Vita)."
+                            data-en="The Story: A New York couple dreamed of an intimate, poetic, and timeless union on the shores of Lake Como. Emphasis was placed on fluidity, natural golden hour light, and Italian authenticity (La Dolce Vita).">
+                            <strong>L'Histoire :</strong> Un couple new-yorkais rêvait d'une union intime, poétique et
+                            hors du temps au bord du lac de Côme. L'accent a été mis sur la fluidité, la lumière
+                            naturelle golden hour et l'authenticité italienne (La Dolce Vita).
+                        </p>
+                        <p data-fr="Le Résultat : Une cérémonie sur l'eau entourée de glycines blanches et de roses poudrées, une arrivée spectaculaire des mariés en bateau Riva en acajou classique, suivie d'un banquet aux chandelles sur la terrasse panoramique de la Villa d'Este."
+                            data-en="The Result: A ceremony on the water surrounded by white wisteria and powdery roses, a spectacular arrival of the newlyweds in a classic mahogany Riva boat, followed by a candlelit banquet on the panoramic terrace of Villa d'Este.">
+                            <strong>Le Résultat :</strong> Une cérémonie sur l'eau entourée de glycines blanches et de
+                            roses poudrées, une arrivée spectaculaire des mariés en bateau Riva en acajou classique,
+                            suivie d'un banquet aux chandelles sur la terrasse panoramique de la Villa d'Este.
+                        </p>
                     </div>
                     <div class="editorial-img-wrapper" style="order: 1;">
                         <img src="images/portfolio_como.png" alt="Lake Como floral ceremony details">
@@ -196,7 +268,8 @@
         </section>
 
         <!-- Dynamic Lightbox Modal Container -->
-        <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Agrandissement de l'image">
+        <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true"
+            aria-label="Agrandissement de l'image">
             <button class="lightbox-close" aria-label="Fermer la vue agrandie">×</button>
             <div class="lightbox-content">
                 <img src="" alt="" class="lightbox-img">
@@ -204,11 +277,16 @@
         </div>
 
         <!-- Call to Action -->
-        <section class="contact-banner" style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
+        <section class="contact-banner"
+            style="background-color: var(--color-bg-rose); padding: 8rem 0; text-align: center;">
             <div class="container">
-                <p class="editorial-subtitle">Donnez Vie à Vos Rêves</p>
-                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);">Vous Serez la Prochaine Histoire Unique</h2>
-                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;">Initier notre entretien</a>
+                <p class="editorial-subtitle" data-fr="Donnez Vie à Vos Rêves" data-en="Bring Your Dreams to Life">
+                    Donnez Vie à Vos Rêves</p>
+                <h2 class="editorial-title" style="margin-bottom: 2.5rem; font-size: clamp(2.2rem, 4.5vw, 4.5rem);"
+                    data-fr="Vous Serez la Prochaine Histoire Unique" data-en="You Will Be the Next Unique Story">Vous
+                    Serez la Prochaine Histoire Unique</h2>
+                <a href="contact.html" class="btn-primary" style="padding: 1.5rem 3.5rem;"
+                    data-fr="Initier notre entretien" data-en="Initiate our interview">Initier notre entretien</a>
             </div>
         </section>
     </main>
@@ -222,54 +300,107 @@
                         <span class="logo-main" style="color: var(--color-bg-light);">Ever After</span>
                         <span class="logo-sub">Events</span>
                     </a>
-                    <p>Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige.</p>
+                    <p data-fr="Agence internationale spécialisée dans la conception, la planification et la scénographie de mariages d'exception et réceptions de prestige."
+                        data-en="International agency specializing in the design, planning, and scenography of exceptional weddings and prestigious receptions.">
+                        Agence internationale spécialisée dans la conception, la planification et la scénographie de
+                        mariages d'exception et réceptions de prestige.</p>
                     <div class="social-icons-footer">
                         <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
                         <a href="#" class="social-icon-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col-links">
-                    <h4>L'Agence</h4>
+                    <h4 data-fr="L'Agence" data-en="The Agency">L'Agence</h4>
                     <ul class="footer-links-list">
-                        <li><a href="about.html">Notre Histoire</a></li>
-                        <li><a href="about.html#values">Nos Valeurs</a></li>
-                        <li><a href="portfolio.html">Nos Mariages</a></li>
-                        <li><a href="contact.html">Prendre Contact</a></li>
+                        <li><a href="about.html" data-fr="Notre Histoire" data-en="Our Story">Notre Histoire</a></li>
+                        <li><a href="about.html#values" data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</a></li>
+                        <li><a href="portfolio.html" data-fr="Nos Mariages" data-en="Our Weddings">Nos Mariages</a></li>
+                        <li><a href="contact.html" data-fr="Prendre Contact" data-en="Get in Touch">Prendre Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="footer-col-links">
-                    <h4>Services</h4>
+                    <h4 data-fr="Services" data-en="Services">Services</h4>
                     <ul class="footer-links-list">
-                        <li><a href="services.html#absolu">Organisation A-Z</a></li>
-                        <li><a href="services.html#decor">Scénographie</a></li>
-                        <li><a href="services.html#jourj">Coordination Jour J</a></li>
-                        <li><a href="services.html#destinations">Destinations de Luxe</a></li>
+                        <li><a href="services.html#absolu" data-fr="Organisation A-Z"
+                                data-en="A-Z Planning">Organisation A-Z</a></li>
+                        <li><a href="services.html#decor" data-fr="Scénographie" data-en="Scenography">Scénographie</a>
+                        </li>
+                        <li><a href="services.html#jourj" data-fr="Coordination Jour J"
+                                data-en="Day-of Coordination">Coordination Jour J</a></li>
+                        <li><a href="services.html#destinations" data-fr="Destinations de Luxe"
+                                data-en="Luxury Destinations">Destinations de Luxe</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col-contact">
-                    <h4>Conciergerie</h4>
+                    <h4 data-fr="Conciergerie" data-en="Concierge Service">Conciergerie</h4>
                     <div class="footer-contact-info">
-                        <span><i data-lucide="phone"></i> +33 1 40 00 00 00</span>
-                        <span><i data-lucide="mail"></i> conciergerie@everafterevents.com</span>
-                        <span><i data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
-                        <span style="margin-top: 1rem;"><a href="https://wa.me/33140000000" class="whatsapp-link"><i data-lucide="message-square"></i> WhatsApp VIP Direct</a></span>
+                        <span><i data-lucide="phone"></i> +229 01 42 10 01 56</span>
+                        <span><i data-lucide="mail"></i> eventafter@gmail.com</span>
+                        <span data-fr="Place Vendôme, 75001 Paris" data-en="Place Vendôme, 75001 Paris"><i
+                                data-lucide="map-pin"></i> Place Vendôme, 75001 Paris</span>
+                        <span style="margin-top: 1rem;"><a href="https://wa.me/2290142100156" class="whatsapp-link"><i
+                                    data-lucide="message-square"></i> <span data-fr="WhatsApp VIP Direct"
+                                    data-en="WhatsApp VIP Direct">WhatsApp VIP Direct</span></a></span>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
+                <p data-fr="&copy; 2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité"
+                    data-en="&copy; 2026 Ever After Events. All rights reserved. Legal Notice | Privacy Policy">&copy;
+                    2026 Ever After Events. Tous droits réservés. Mentions Légales | Politique de Confidentialité</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Cookies</a>
-                    <a href="#">Plan du site</a>
+                    <a href="#" data-fr="Cookies" data-en="Cookies">Cookies</a>
+                    <a href="#" data-fr="Plan du site" data-en="Sitemap">Plan du site</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-toggle" aria-label="Open chat">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+    </div>
+    <div id="chatbot-window" aria-hidden="true">
+        <div id="chatbot-header">
+            <div class="chatbot-title">
+                <div class="chatbot-title-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="chatbot-title-text">Ever After</span>
+                    <span class="chatbot-title-status" data-fr="Conciergerie en ligne"
+                        data-en="Online Concierge">Conciergerie en ligne</span>
+                </div>
+            </div>
+            <span id="chatbot-close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </span>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" data-placeholder-fr="Posez votre question…" data-placeholder-en="Ask your question…"
+                placeholder="Posez votre question…" />
+            <button aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+            </button>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
@@ -281,7 +412,10 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="js/flower_fall.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/flower_fall.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
+
 </html>
