@@ -236,7 +236,7 @@ section {
 /* Mobile responsive fixes */
 @media (max-width: 768px) {
     :root {
-        --container-padding: 5vw;
+        --container-padding: 6vw;
     }
 
     section {
