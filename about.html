@@ -344,50 +344,13 @@
         </div>
     </footer>
 
+    <!-- Chatbot placeholder -->
+    <div id="chatbot-container"></div>
+
     <!-- Jury Access Link -->
     <a href="jury.html" id="jury-link" aria-label="Accès Espace Jury" title="Espace Jury">
         <i data-lucide="gavel"></i>
     </a>
-
-    <!-- Chatbot Widget -->
-    <div id="chatbot-toggle" aria-label="Open chat">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-        </svg>
-    </div>
-    <div id="chatbot-window" aria-hidden="true">
-        <div id="chatbot-header">
-            <div class="chatbot-title">
-                <div class="chatbot-title-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                    </svg>
-                </div>
-                <div>
-                    <span class="chatbot-title-text">Ever After</span>
-                    <span class="chatbot-title-status" data-fr="Conciergerie en ligne"
-                        data-en="Online Concierge">Conciergerie en ligne</span>
-                </div>
-            </div>
-            <span id="chatbot-close">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-            </span>
-        </div>
-        <div id="chatbot-messages"></div>
-        <div id="chatbot-input">
-            <input type="text" data-placeholder-fr="Posez votre question…" data-placeholder-en="Ask your question…"
-                placeholder="Posez votre question…" />
-            <button aria-label="Envoyer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <line x1="22" y1="2" x2="11" y2="13" />
-                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                </svg>
-            </button>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
