@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     reply: "Ever After Events a été fondée par Hélène de Valois, une directrice artistique passionnée. C'est sa vision de l'excellence et de l'émotion qui est au cœur de chaque événement que nous créons. ✨"
                 },
                 {
-                    keys: ['destination', 'étranger', 'etranger', 'italie', 'provence', 'côme', 'come', 'amalfi', 'château', 'chateau'],
-                    reply: "Nous orchestrons des mariages d'exception en France et à l'international (Lac de Côme, Côte Amalfitaine...). Le monde est votre décor, nous nous occupons du reste. 🌍"
+                    keys: ['destination', 'étranger', 'etranger', 'cotonou', 'porto-novo', 'ouidah', 'abomey', 'parakou', 'bohicon', 'adjaha', 'kandi', 'natitingou', 'italie', 'provence', 'côme', 'amalfi'],
+                    reply: "Absolument. Nous organisons des mariages d'exception sur l'ensemble du territoire béninois (Cotonou, Ouidah, Porto-Novo...) ainsi qu'à l'international. Le monde est votre décor, nous nous occupons du reste. 🌍"
                 },
                 {
                     keys: ['portfolio', 'photo', 'galerie', 'réalisation', 'realisation', 'mariage'],
@@ -170,8 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     reply: "Ever After Events was founded by Hélène de Valois, a passionate artistic director. Her vision of excellence and emotion is at the heart of every event we create. ✨"
                 },
                 {
-                    keys: ['destination', 'abroad', 'italy', 'provence', 'como', 'amalfi', 'castle', 'chateau', 'international'],
-                    reply: "We orchestrate exceptional weddings in France and internationally (Lake Como, Amalfi Coast...). The world is your stage, we'll handle the rest. 🌍"
+                    keys: ['destination', 'abroad', 'cotonou', 'porto-novo', 'ouidah', 'abomey', 'parakou', 'bohicon', 'adjaha', 'kandi', 'natitingou', 'italy', 'provence', 'como', 'amalfi', 'international'],
+                    reply: "Absolutely. We organize exceptional weddings throughout Benin (Cotonou, Ouidah, Porto-Novo...) as well as internationally. The world is your stage, we'll handle the rest. 🌍"
                 },
                 {
                     keys: ['portfolio', 'photo', 'gallery', 'wedding', 'work', 'project'],
