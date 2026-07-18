@@ -94,32 +94,44 @@ document.addEventListener('DOMContentLoaded', () => {
             send: "Envoyer",
             keywords: [
                 {
+                    keys: ['bonjour', 'salut', 'hello', 'coucou', 'comment va tu'],
+                    reply: "Bonjour ! Vous êtes au bon endroit. Ever After est le choix idéal pour un mariage exceptionnel et inoubliable. En quoi puis-je vous être utile aujourd'hui ? ☀️"
+                },
+                {
                     keys: ['prix', 'tarif', 'budget', 'combien', 'cout', 'coût'],
-                    reply: "Chaque célébration Ever After Events est unique et conçue sur-mesure. Le coût dépend du lieu, de la scénographie et du nombre d'invités. Nous vous invitons à réserver une consultation privée pour obtenir un devis personnalisé. 💍"
+                    reply: "Chaque célébration Ever After Events est unique et conçue sur-mesure. Le coût dépend du lieu, de la scénographie et du nombre d'invités. Nous vous invitons à réserver une consultation privée pour obtenir un devis personnalisé. Ensemble, nous créerons un événement qui respecte vos désirs tout en étant absolument spectaculaire. 💍"
                 },
                 {
                     keys: ['service', 'prestation', 'formule', 'absolu', 'esthetique', 'jour j', 'offre'],
-                    reply: "Nous proposons 3 formules d'exception :\n\n✦ L'Absolu — Organisation totale A-Z\n✦ L'Esthétique — Conception scénographique & design\n✦ Le Jour J — Coordination le jour de l'événement\n\nTous les détails sont dans la section Services."
+                    reply: "Nous proposons 3 formules d'exception :\n\n✦ L'Absolu — Organisation totale A-Z\n✦ L'Esthétique — Conception scénographique & design\n✦ Le Jour J — Coordination le jour de l'événement\n\nChacune est pensée pour vous offrir une tranquillité d'esprit absolue et un résultat qui dépassera vos attentes."
                 },
                 {
-                    keys: ['contact', 'adresse', 'telephone', 'téléphone', 'mail', 'email', 'whatsapp', 'bureau', 'paris'],
-                    reply: "Nos bureaux sont situés Place Vendôme à Paris (75001). Vous pouvez joindre notre conciergerie VIP au +229 01 42 10 01 56 ou par email à eventafter@gmail.com. 📍"
+                    keys: ['processus', 'organisation', 'comment', 'déroule', 'manière', 'étape', 'phase'],
+                    reply: "Notre processus se déroule en 4 phases : Conceptualisation, Planification, Orchestration et L'Apothéose. C'est notre promesse pour une préparation sereine et un jour J absolument parfait."
+                },
+                {
+                    keys: ['rendez-vous', 'rdv', 'réserver', 'reserver', 'consultation', 'booker', 'prendre'],
+                    reply: "Pour prendre rendez-vous, nous vous invitons à remplir notre formulaire exclusif sur la page 'Contact'. Un membre de notre équipe vous contactera sous 24h pour planifier votre consultation privée. C'est le premier pas vers une célébration qui marquera les esprits. 📅"
+                },
+                {
+                    keys: ['contact', 'adresse', 'lieu', 'telephone', 'téléphone', 'mail', 'email', 'whatsapp', 'bureau', 'paris'],
+                    reply: "Nos bureaux sont situés Place Vendôme à Paris (75001). Vous pouvez joindre notre conciergerie VIP au +229 01 42 10 01 56 ou par email à eventafter@gmail.com. N'hésitez pas à nous contacter, votre histoire commence ici. 📍"
                 },
                 {
                     keys: ['fondat', 'hélène', 'helene', 'valois', 'créateur', 'createur', 'equipe', 'équipe'],
-                    reply: "Ever After Events a été fondée par Hélène de Valois, directrice artistique passionnée par la création d'instants éternels et de scénographies haut de gamme. ✨"
+                    reply: "Ever After Events a été fondée par Hélène de Valois, une directrice artistique passionnée. C'est sa vision de l'excellence et de l'émotion qui est au cœur de chaque événement que nous créons. ✨"
                 },
                 {
                     keys: ['destination', 'étranger', 'etranger', 'italie', 'provence', 'côme', 'come', 'amalfi', 'château', 'chateau'],
-                    reply: "Nous orchestrons des mariages d'exception en France (Châteaux de la Loire, Provence) et à l'international (Villa d'Este au Lac de Côme, Côte Amalfitaine, Caraïbes). 🌍"
+                    reply: "Nous orchestrons des mariages d'exception en France et à l'international (Lac de Côme, Côte Amalfitaine...). Le monde est votre décor, nous nous occupons du reste. 🌍"
                 },
                 {
                     keys: ['portfolio', 'photo', 'galerie', 'réalisation', 'realisation', 'mariage'],
-                    reply: "Découvrez nos plus belles réalisations dans notre Portfolio. Chaque mariage raconte une histoire unique, sublimée par notre vision artistique. 📸"
+                    reply: "Découvrez nos plus belles réalisations dans notre Portfolio. Chaque mariage raconte une histoire unique. La vôtre sera la prochaine. 📸"
                 },
                 {
                     keys: ['merci', 'parfait', 'super', 'génial', 'genial', 'excellent'],
-                    reply: "Merci beaucoup ! N'hésitez pas si vous avez d'autres questions. Nous sommes là pour rendre votre rêve réalité. 💫"
+                    reply: "Avec plaisir ! Nous sommes là pour transformer chaque détail de votre rêve en une réalité inoubliable. 💫"
                 }
             ]
         },
@@ -130,32 +142,44 @@ document.addEventListener('DOMContentLoaded', () => {
             send: "Send",
             keywords: [
                 {
+                    keys: ['hello', 'hi', 'hey', 'greetings'],
+                    reply: "Hello! How can I assist you today? ☀️"
+                },
+                {
                     keys: ['price', 'cost', 'budget', 'rate', 'tariff', 'how much', 'expensive'],
-                    reply: "Each Ever After Events celebration is unique and bespoke. The cost depends on the location, design, and number of guests. We invite you to book a private consultation for a personalized estimate. 💍"
+                    reply: "Each Ever After Events celebration is unique and bespoke. The cost depends on the location, design, and number of guests. We invite you to book a private consultation for a personalized estimate. Together, we will create an event that respects your wishes while being absolutely spectacular. 💍"
                 },
                 {
                     keys: ['service', 'formula', 'offer', 'package', 'absolu', 'esthetique', 'coordination', 'planning'],
-                    reply: "We offer 3 exceptional packages:\n\n✦ L'Absolu — Complete A-Z planning\n✦ L'Esthétique — Scenography & design\n✦ Le Jour J — Day-of coordination\n\nFull details on our Services page."
+                    reply: "We offer 3 exceptional packages:\n\n✦ L'Absolu — Complete A-Z planning\n✦ L'Esthétique — Scenography & design\n✦ Le Jour J — Day-of coordination\n\nEach is designed to offer you absolute peace of mind and a result that will exceed your expectations."
                 },
                 {
-                    keys: ['contact', 'address', 'phone', 'mail', 'email', 'whatsapp', 'office', 'paris'],
-                    reply: "Our offices are at Place Vendôme, Paris (75001). Reach our VIP concierge at +229 01 42 10 01 56 or via email at eventafter@gmail.com. 📍"
+                    keys: ['process', 'organization', 'how', 'steps', 'phases', 'works'],
+                    reply: "Our process unfolds in 4 key phases: Conceptualization, Planning, Orchestration, and The Climax. This is our promise for a serene preparation and an absolutely perfect D-day."
+                },
+                {
+                    keys: ['appointment', 'book', 'booking', 'consultation', 'schedule', 'meet'],
+                    reply: "To book an appointment, we invite you to fill out our exclusive form on the 'Contact' page. A team member will get back to you within 24 hours to schedule your private consultation. It's the first step towards a celebration that will be remembered. 📅"
+                },
+                {
+                    keys: ['contact', 'address', 'location', 'phone', 'mail', 'email', 'whatsapp', 'office', 'paris'],
+                    reply: "Our offices are at Place Vendôme, Paris (75001). Reach our VIP concierge at +229 01 42 10 01 56 or via email at eventafter@gmail.com. Don't hesitate to contact us, your story begins here. 📍"
                 },
                 {
                     keys: ['founder', 'helene', 'valois', 'creator', 'team'],
-                    reply: "Ever After Events was founded by Hélène de Valois, an artistic director dedicated to creating eternal moments and luxurious scenographies. ✨"
+                    reply: "Ever After Events was founded by Hélène de Valois, a passionate artistic director. Her vision of excellence and emotion is at the heart of every event we create. ✨"
                 },
                 {
                     keys: ['destination', 'abroad', 'italy', 'provence', 'como', 'amalfi', 'castle', 'chateau', 'international'],
-                    reply: "We orchestrate exceptional weddings in France (Loire Valley castles, Provence) and internationally (Villa d'Este in Lake Como, Amalfi Coast, Caribbean). 🌍"
+                    reply: "We orchestrate exceptional weddings in France and internationally (Lake Como, Amalfi Coast...). The world is your stage, we'll handle the rest. 🌍"
                 },
                 {
                     keys: ['portfolio', 'photo', 'gallery', 'wedding', 'work', 'project'],
-                    reply: "Discover our most beautiful creations in our Portfolio. Each wedding tells a unique story, elevated by our artistic vision. 📸"
+                    reply: "Discover our most beautiful creations in our Portfolio. Each wedding tells a unique story. Yours will be next. 📸"
                 },
                 {
                     keys: ['thank', 'perfect', 'great', 'amazing', 'excellent', 'wonderful'],
-                    reply: "Thank you so much! Don't hesitate if you have more questions. We're here to make your dream a reality. 💫"
+                    reply: "You're most welcome! We are here to turn every detail of your dream into an unforgettable reality. 💫"
                 }
             ]
         }

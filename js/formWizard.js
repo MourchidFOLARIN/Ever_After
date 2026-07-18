@@ -74,32 +74,55 @@ document.addEventListener('DOMContentLoaded', () => {
         return isValid;
     }
 
-    if (nextBtn) {
-        nextBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (validateStep(currentStepIndex)) {
-                if (currentStepIndex < steps.length - 1) {
-                    showStep(currentStepIndex + 1);
-                }
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (validateStep(currentStepIndex)) {
+            if (currentStepIndex < steps.length - 1) {
+                showStep(currentStepIndex + 1);
             }
-        });
-    }
+        }
+    });
 
-    if (backBtn) {
-        backBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (currentStepIndex > 0) {
-                showStep(currentStepIndex - 1);
-            }
-        });
-    }
+    backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentStepIndex > 0) {
+            showStep(currentStepIndex - 1);
+        }
+    });
 
     form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent default form submission
+
         if (!validateStep(currentStepIndex)) {
-            e.preventDefault();
             return;
         }
 
+        const formData = new FormData(form);
+        const action = form.getAttribute('action');
+
+        // AJAX submission to Formspree
+        fetch(action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                // Success!
+                showSuccess();
+            } else {
+                // Handle server errors
+                alert("Une erreur est survenue. Veuillez réessayer.");
+            }
+        }).catch(error => {
+            // Handle network errors
+            console.error('Form submission error:', error);
+            alert("Une erreur réseau est survenue. Veuillez vérifier votre connexion et réessayer.");
+        });
+    });
+
+    function showSuccess() {
         // Run flower fall / confetti if confetti is loaded
         if (window.confetti) {
             window.confetti({
@@ -109,17 +132,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // The onsubmit attribute was removed from contact.html.
-        // This event listener now handles the confirmation alert.
-        setTimeout(() => {
-            const lang = document.documentElement.getAttribute('lang') || 'fr';
-            const message = lang === 'en'
-                ? 'Your VIP inquiry has been registered. Ever After Events thanks you.'
-                : 'Votre demande VIP a été enregistrée. Ever After Events vous remercie.';
-            alert(message);
-        }, 100); // Small delay to let confetti animation start
+        const lang = document.documentElement.getAttribute('lang') || 'fr';
+        const message = lang === 'en'
+            ? 'Your VIP inquiry has been registered. Ever After Events thanks you.'
+            : 'Votre demande VIP a été enregistrée. Ever After Events vous remercie.';
+        alert(message);
 
-    });
+        form.reset();
+        showStep(0); // Go back to the first step
+    }
 
     // Initialize first step
     showStep(0);

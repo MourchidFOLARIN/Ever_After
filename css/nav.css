@@ -216,6 +216,11 @@ header.site-header.scrolled {
     transition: var(--transition-fast);
 }
 
+.mobile-nav-cta {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
 .mobile-nav-link:hover {
     color: var(--color-gold);
     transform: scale(1.05);

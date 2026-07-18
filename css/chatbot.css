@@ -20,9 +20,9 @@
     box-shadow:
         0 4px 20px rgba(197, 168, 128, 0.35),
         0 1px 4px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
+    z-index: 10000;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-                box-shadow 0.4s ease;
+        box-shadow 0.4s ease;
     animation: chatPulse 3s ease-in-out infinite;
 }
 
@@ -49,8 +49,15 @@
 }
 
 @keyframes chatPulse {
-    0%, 100% { box-shadow: 0 4px 20px rgba(197, 168, 128, 0.35), 0 1px 4px rgba(0, 0, 0, 0.1); }
-    50% { box-shadow: 0 4px 30px rgba(197, 168, 128, 0.55), 0 1px 4px rgba(0, 0, 0, 0.1); }
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(197, 168, 128, 0.35), 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(197, 168, 128, 0.55), 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
 }
 
 /* ── Chat Window Container ─────────────────────────────── */
@@ -78,8 +85,8 @@
     visibility: hidden;
     transform: translateY(20px) scale(0.96);
     transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-                visibility 0.4s,
-                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        visibility 0.4s,
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 #chatbot-window.open {
@@ -185,9 +192,11 @@
 #chatbot-messages::-webkit-scrollbar {
     width: 4px;
 }
+
 #chatbot-messages::-webkit-scrollbar-track {
     background: transparent;
 }
+
 #chatbot-messages::-webkit-scrollbar-thumb {
     background: rgba(197, 168, 128, 0.3);
     border-radius: 4px;
@@ -204,8 +213,15 @@
 }
 
 @keyframes msgFadeIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .message.bot {
@@ -246,12 +262,27 @@
     animation: typingBounce 1.4s infinite ease-in-out both;
 }
 
-.typing-indicator span:nth-child(2) { animation-delay: 0.16s; }
-.typing-indicator span:nth-child(3) { animation-delay: 0.32s; }
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.16s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.32s;
+}
 
 @keyframes typingBounce {
-    0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
-    40% { transform: scale(1); opacity: 1; }
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0.6);
+        opacity: 0.4;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* ── Input Area ────────────────────────────────────────── */
