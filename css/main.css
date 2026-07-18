@@ -13,15 +13,15 @@
     --color-dark-light: #2D2D2D;
     --color-gray: #767676;
     --color-border: rgba(197, 168, 128, 0.2);
-    
+
     /* Typography */
     --font-serif: 'Cormorant Garamond', serif;
     --font-sans: 'Plus Jakarta Sans', sans-serif;
-    
+
     /* Transitions */
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-fast: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    
+
     /* Spacing */
     --container-padding: 8vw;
 }
@@ -36,7 +36,8 @@
 }
 
 html {
-    scroll-behavior: initial; /* Essential for Lenis smooth scrolling */
+    scroll-behavior: initial;
+    /* Essential for Lenis smooth scrolling */
     background-color: var(--color-bg-light);
     color: var(--color-dark);
 }
@@ -53,13 +54,16 @@ body {
 ::-webkit-scrollbar {
     width: 6px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--color-bg-light);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--color-gold);
     border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-gold-hover);
 }
@@ -73,7 +77,12 @@ body {
 }
 
 /* Typography Hierarchy */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-serif);
     font-weight: 300;
     line-height: 1.1;
@@ -91,7 +100,8 @@ a {
     transition: var(--transition-fast);
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     height: auto;
     display: block;
@@ -228,11 +238,39 @@ section {
     :root {
         --container-padding: 5vw;
     }
+
     section {
         padding: 6rem 0;
     }
 }
+
 /* Curseur fleur personnalisé */
 body {
     cursor: url('../images/flower_cursor2.png'), auto;
+}
+
+/* Jury Access Floating Button */
+#jury-link {
+    position: fixed;
+    bottom: 28px;
+    left: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--color-dark);
+    color: var(--color-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+#jury-link:hover {
+    transform: scale(1.08);
+    background: var(--color-gold);
+    color: var(--color-dark);
+    box-shadow: 0 6px 28px rgba(197, 168, 128, 0.5);
 }

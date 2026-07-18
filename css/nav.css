@@ -369,6 +369,10 @@ header.site-header.scrolled {
 
 @media (max-width: 768px) {
 
+    header.site-header .lang-toggle {
+        display: none;
+    }
+
     .nav-menu,
     .header-cta {
         display: none;

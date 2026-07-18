@@ -48,7 +48,6 @@
                     <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
                 </ul>
             </nav>
-            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
 
             <div class="header-cta">
                 <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
@@ -59,6 +58,8 @@
                 <span></span>
                 <span></span>
             </button>
+
+            <button id="langToggle" aria-label="Toggle language" class="lang-toggle">EN/FR</button>
         </div>
     </header>
 
@@ -71,10 +72,10 @@
             </li>
             <li><a href="about.html" class="mobile-nav-link" data-fr="À Propos" data-en="About Us">À Propos</a></li>
             <li><a href="contact.html" class="mobile-nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
-            <li style="margin-top: 2rem;">
-                <a href="contact.html" class="btn-primary" style="font-size: 0.9rem;" data-fr="Prendre RDV"
-                    data-en="Book an Appt">Prendre RDV</a>
+            <li class="mobile-nav-cta">
+                <a href="contact.html" class="btn-primary" data-fr="Prendre RDV" data-en="Book an Appt">Prendre RDV</a>
             </li>
+            <li><button id="langToggleMobile" class="lang-toggle" aria-label="Toggle language">EN/FR</button></li>
         </ul>
     </div>
 
@@ -411,6 +412,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Jury Access Link -->
+    <a href="jury.html" id="jury-link" aria-label="Accès Espace Jury" title="Espace Jury">
+        <i data-lucide="gavel"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
