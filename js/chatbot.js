@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     keys: ['contact', 'adresse', 'lieu', 'telephone', 'téléphone', 'mail', 'email', 'whatsapp', 'bureau', 'paris'],
-                    reply: "Nos bureaux sont situés Place Vendôme à Paris (75001). Vous pouvez joindre notre conciergerie VIP au +229 01 42 10 01 56 ou par email à eventafter@gmail.com. N'hésitez pas à nous contacter, votre histoire commence ici. 📍"
+                    reply: "Notre agence est basée à Cotonou, au Bénin. Vous pouvez joindre notre conciergerie VIP au +229 01 42 10 01 56 ou par email à eventafter@gmail.com. N'hésitez pas à nous contacter, votre histoire commence ici. 📍"
                 },
                 {
                     keys: ['fondat', 'hélène', 'helene', 'valois', 'créateur', 'createur', 'equipe', 'équipe'],
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     keys: ['contact', 'address', 'location', 'phone', 'mail', 'email', 'whatsapp', 'office', 'paris'],
-                    reply: "Our offices are at Place Vendôme, Paris (75001). Reach our VIP concierge at +229 01 42 10 01 56 or via email at eventafter@gmail.com. Don't hesitate to contact us, your story begins here. 📍"
+                    reply: "Our agency is based in Cotonou, Benin. You can reach our VIP concierge at +229 01 42 10 01 56 or via email at eventafter@gmail.com. Don't hesitate to contact us, your story begins here. 📍"
                 },
                 {
                     keys: ['founder', 'helene', 'valois', 'creator', 'team'],

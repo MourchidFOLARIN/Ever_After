@@ -45,6 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         currentStepIndex = index;
+
+        // Track funnel steps in Google Analytics
+        if (typeof gtag === 'function') {
+            let eventName = '';
+            if (index === 1) {
+                eventName = 'form_step_2'; // Reached step 2
+            } else if (index === 2) {
+                eventName = 'form_step_3'; // Reached step 3
+            }
+
+            if (eventName) {
+                gtag('event', eventName, { 'event_category': 'Contact Funnel' });
+            }
+        }
     }
 
     function validateStep(index) {
@@ -112,6 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Success!
                 showSuccess();
             } else {
+                // Track submission failure
+                if (typeof gtag === 'function') {
+                    gtag('event', 'form_submit_error', { 'event_category': 'Contact Funnel' });
+                }
                 // Handle server errors
                 alert("Une erreur est survenue. Veuillez réessayer.");
             }
@@ -119,6 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Handle network errors
             console.error('Form submission error:', error);
             alert("Une erreur réseau est survenue. Veuillez vérifier votre connexion et réessayer.");
+            // Track network error
+            if (typeof gtag === 'function') {
+                gtag('event', 'form_network_error', { 'event_category': 'Contact Funnel' });
+            }
         });
     });
 
@@ -130,6 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 spread: 80,
                 origin: { y: 0.6 }
             });
+        }
+
+        // Track successful submission
+        if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { 'event_category': 'Contact Funnel' });
         }
 
         const lang = document.documentElement.getAttribute('lang') || 'fr';
