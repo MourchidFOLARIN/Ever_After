@@ -138,6 +138,11 @@ header.site-header.scrolled {
     display: block;
 }
 
+.header-cta {
+    display: flex;
+    align-items: center;
+}
+
 .header-cta .btn-primary {
     padding: 0.75rem 1.75rem;
     font-size: 0.75rem;
@@ -369,7 +374,11 @@ header.site-header.scrolled {
 
 @media (max-width: 768px) {
 
-    header.site-header .lang-toggle {
+    #langToggleDesktop {
+        display: none;
+    }
+
+    .header-cta {
         display: none;
     }
 
