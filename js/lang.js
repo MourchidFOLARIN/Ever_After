@@ -22,32 +22,33 @@ function applyLanguage(lang) {
     });
 
     // Update button appearance
-    const langToggle = document.getElementById('langToggle');
+    const langToggleDesktop = document.getElementById('langToggleDesktop');
     const langToggleMobile = document.getElementById('langToggleMobile');
-    if (langToggle) {
-        langToggle.textContent = lang === 'fr' ? 'EN' : 'FR';
-        langToggle.setAttribute('aria-label', lang === 'fr' ? 'Switch to English' : 'Passer en Français');
+    if (langToggleDesktop) {
+        langToggleDesktop.textContent = lang === 'fr' ? 'EN' : 'FR';
+        langToggleDesktop.setAttribute('aria-label', lang === 'fr' ? 'Switch to English' : 'Passer en Français');
     }
     if (langToggleMobile) {
         langToggleMobile.textContent = lang === 'fr' ? 'EN' : 'FR';
         langToggleMobile.setAttribute('aria-label', lang === 'fr' ? 'Switch to English' : 'Passer en Français');
     }
-
     localStorage.setItem('preferredLang', lang);
 }
 // Expose the function globally so other scripts (like chatbot.js) can call it.
 window.applyLanguage = applyLanguage;
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langToggle = document.getElementById('langToggle');
+    const langToggleDesktop = document.getElementById('langToggleDesktop');
     const langToggleMobile = document.getElementById('langToggleMobile');
     let currentLang = localStorage.getItem('preferredLang') || 'fr';
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
+
+    if (langToggleDesktop) {
+        langToggleDesktop.addEventListener('click', () => {
             currentLang = currentLang === 'fr' ? 'en' : 'fr';
             applyLanguage(currentLang);
         });
     }
+
     if (langToggleMobile) {
         langToggleMobile.addEventListener('click', () => {
             currentLang = currentLang === 'fr' ? 'en' : 'fr';
