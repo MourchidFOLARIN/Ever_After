@@ -79,6 +79,12 @@
     margin-top: 5rem;
 }
 
+.services-hero-bg {
+    background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)), url('https://i.pinimg.com/736x/c4/71/96/c47196360e02fb57d1464100ee91ddc7.jpg') center/cover no-repeat;
+}
+
+
+
 
 
 .hero-content {
