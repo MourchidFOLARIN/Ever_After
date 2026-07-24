@@ -22,6 +22,19 @@
     color: var(--color-bg-light);
 }
 
+body.has-hero-video header.site-header:not(.scrolled) .lang-toggle {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+}
+
+body.has-hero-video header.site-header:not(.scrolled) .lang-toggle:hover {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-dark);
+}
+
 @media (max-width: 768px) {
     .lang-toggle {
         margin: 1rem 0;

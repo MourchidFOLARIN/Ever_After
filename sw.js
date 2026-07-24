@@ -1,18 +1,28 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('v1').then(function(cache) {
+    caches.open('everafter-v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/main.css',
-        '/css/nav.css',
-        '/css/pages.css',
-        '/js/main.js',
-        '/js/animations.js',
-        '/manifest.json',
-        '/icons/icon-192.png',
-        '/icons/icon-512.png'
-      ]);
+        './',
+        './index.html',
+        './services.html',
+        './portfolio.html',
+        './about.html',
+        './contact.html',
+        './css/main.css',
+        './css/nav.css',
+        './css/pages.css',
+        './css/lang.css',
+        './css/chatbot.css',
+        './css/formWizard.css',
+        './js/main.js',
+        './js/animations.js',
+        './js/lang.js',
+        './js/chatbot.js',
+        './js/tracking.js',
+        './manifest.json'
+      ]).catch(function(err) {
+        console.warn('Service Worker cache.addAll pre-fetch error:', err);
+      });
     })
   );
 });

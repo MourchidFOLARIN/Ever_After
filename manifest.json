@@ -1,0 +1,16 @@
+{
+  "name": "Ever After Events",
+  "short_name": "Ever After",
+  "description": "Agence internationale d'organisation, de décoration et de coordination de mariages et réceptions de luxe.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#C5A059",
+  "icons": [
+    {
+      "src": "images/hero_fallback.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
