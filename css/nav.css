@@ -251,14 +251,17 @@ header.site-header.scrolled {
 }
 
 .footer-col-brand p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.85);
     margin: 1.5rem 0;
     max-width: 320px;
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .footer-col-links h4 {
-    color: var(--color-gold);
+    background: var(--color-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: var(--font-sans);
     font-size: 0.8rem;
     font-weight: 600;
@@ -275,7 +278,7 @@ header.site-header.scrolled {
 }
 
 .footer-links-list a {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
     font-weight: 300;
 }
@@ -286,7 +289,9 @@ header.site-header.scrolled {
 }
 
 .footer-col-contact h4 {
-    color: var(--color-gold);
+    background: var(--color-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: var(--font-sans);
     font-size: 0.8rem;
     font-weight: 600;
@@ -299,7 +304,7 @@ header.site-header.scrolled {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 0.9rem;
     font-weight: 300;
 }
