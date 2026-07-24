@@ -1,0 +1,154 @@
+/* ═══════════════════════════════════════════════════════════
+   Ever After Events — Before/After Scenography Slider (CSS)
+   Interactive Split Image Transformation Component
+   ═══════════════════════════════════════════════════════════ */
+
+.before-after-section {
+    background-color: var(--color-bg-dark, #111111);
+    color: var(--color-bg-light, #FDFBF7);
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.before-after-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ba-slider-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(212, 175, 135, 0.3);
+    user-select: none;
+    touch-action: pan-y;
+}
+
+/* Image layers */
+.ba-img-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ba-img-before-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Controlled by JS slider */
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.ba-img-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* Keep constant full width image inside clipping container */
+    width: 1000px; 
+    max-width: none;
+    object-fit: cover;
+    filter: grayscale(30%) brightness(0.85);
+}
+
+/* Labels on images */
+.ba-label {
+    position: absolute;
+    bottom: 1.5rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 30px;
+    font-family: var(--font-sans, sans-serif);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    z-index: 4;
+    pointer-events: none;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.ba-label-before {
+    left: 1.5rem;
+    background: rgba(17, 17, 17, 0.7);
+    color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ba-label-after {
+    right: 1.5rem;
+    background: rgba(197, 168, 128, 0.85);
+    color: #111;
+    border: 1px solid rgba(212, 175, 135, 0.5);
+}
+
+/* Handle bar & divider line */
+.ba-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Controlled by JS slider */
+    width: 2px;
+    background: var(--color-gold, #C5A880);
+    z-index: 5;
+    transform: translateX(-50%);
+    cursor: ew-resize;
+    box-shadow: 0 0 12px rgba(197, 168, 128, 0.8);
+}
+
+.ba-handle-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background: var(--color-gold, #C5A880);
+    color: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    transition: transform 0.2s ease;
+}
+
+.ba-handle-button:hover {
+    transform: translate(-50%, -50%) scale(1.12);
+}
+
+@media (max-width: 768px) {
+    .ba-slider-wrapper {
+        aspect-ratio: 4 / 3;
+        border-radius: 14px;
+    }
+    .ba-label {
+        font-size: 0.65rem;
+        padding: 0.4rem 0.85rem;
+        bottom: 1rem;
+    }
+    .ba-label-before {
+        left: 1rem;
+    }
+    .ba-label-after {
+        right: 1rem;
+    }
+    .ba-handle-button {
+        width: 40px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+}

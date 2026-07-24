@@ -42,6 +42,11 @@
     <link rel="stylesheet" href="css/pages.css">
     <link rel="stylesheet" href="css/lang.css">
     <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/estimator.css">
+    <link rel="stylesheet" href="css/beforeAfter.css">
+    <link rel="stylesheet" href="css/vipBooking.css">
+    <link rel="stylesheet" href="css/soundscape.css">
+    <link rel="stylesheet" href="css/videoReviews.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEGGFT72RF"></script>
@@ -181,9 +186,8 @@
                 <p class="editorial-subtitle" data-fr="L'Art de Recevoir" data-en="The Art of Hosting">L'Art de Recevoir
                 </p>
                 <h2 class="brand-statement-text"
-                    data-fr='"Chaque détail a une âme. Nous croyons que le luxe réside dans l' harmonie invisible des
-                    moments parfaits, là où l'émotion rencontre la perfection absolue."'
-                    data-en='"Every detail has a soul. We believe that luxury lies in the invisible harmony of perfect moments, where emotion meets absolute perfection."'>
+                    data-fr="&quot;Chaque détail a une âme. Nous croyons que le luxe réside dans l'harmonie invisible des moments parfaits, là où l'émotion rencontre la perfection absolue.&quot;"
+                    data-en="&quot;Every detail has a soul. We believe that luxury lies in the invisible harmony of perfect moments, where emotion meets absolute perfection.&quot;">
                     "Chaque détail a une âme. Nous croyons que le luxe réside dans l'harmonie invisible des moments
                     parfaits, là où l'émotion rencontre la perfection absolue."
                 </h2>
@@ -408,6 +412,15 @@
             </div>
         </section>
 
+        <!-- 6.5 BEFORE / AFTER SCENOGRAPHY SLIDER -->
+        <section class="before-after-section">
+            <div class="luxury-before-after-container"
+                 data-before-img="https://i.pinimg.com/736x/2a/c5/fa/2ac5fa9b4a1dcdb537b63916935aea85.jpg"
+                 data-after-img="https://i.pinimg.com/736x/3a/d7/67/3ad76785781b738f2348a21368a0283e.jpg"
+                 data-title-fr="La Métamorphose Scénographique"
+                 data-en-title="Scenographic Metamorphosis"></div>
+        </section>
+
         <!-- 7. CINEMATIC VIDEO AMBIANCE SECTION -->
         <section class="video-ambiance-section" aria-label="Ambiance Vidéo">
             <div class="container">
@@ -480,9 +493,8 @@
                         <!-- Slide 1 -->
                         <div class="swiper-slide review-slide">
                             <blockquote class="review-quote"
-                                data-fr='"Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout était au-delà de nos rêves les plus fous. L\'
-                                équipe a su gérer chaque imprévu avec une grâce absolue."'
-                                data-en='"Working with Ever After Events was the best decision of our wedding. Everything was beyond our wildest dreams. The team managed every unforeseen detail with absolute grace."'>
+                                data-fr="&quot;Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout était au-delà de nos rêves les plus fous. L'équipe a su gérer chaque imprévu avec une grâce absolue.&quot;"
+                                data-en="&quot;Working with Ever After Events was the best decision of our wedding. Everything was beyond our wildest dreams. The team managed every unforeseen detail with absolute grace.&quot;">
                                 "Travailler avec Ever After Events a été la meilleure décision de notre mariage. Tout
                                 était au-delà de nos rêves les plus fous. L'équipe a su gérer chaque imprévu avec une
                                 grâce absolue."
@@ -499,16 +511,15 @@
                                     <i data-lucide="star"></i>
                                     <i data-lucide="star"></i>
                                 </div>
+                                <button class="review-video-badge" data-video="https://v1.pinimg.com/videos/mc/720p/fd/2c/7e/fd2c7eb7bb7c38d00f7ab72f9bcec3e4.mp4" data-fr="▶ Témoignage Vidéo" data-en="▶ Video Story">▶ Témoignage Vidéo</button>
                             </div>
                         </div>
 
                         <!-- Slide 2 -->
                         <div class="swiper-slide review-slide">
                             <blockquote class="review-quote"
-                                data-fr='"Un sens du design extraordinaire, une coordination d\' une précision
-                                chirurgicale, et pourtant, une douceur et une sérénité rassurantes tout au long de la
-                                planification. Magique."'
-                                data-en='"An extraordinary design sense, surgical precision coordination, and yet a reassuring sweetness and serenity throughout the planning. Magic."'>
+                                data-fr="&quot;Un sens du design extraordinaire, une coordination d'une précision chirurgicale, et pourtant, une douceur et une sérénité rassurantes tout au long de la planification. Magique.&quot;"
+                                data-en="&quot;An extraordinary design sense, surgical precision coordination, and yet a reassuring sweetness and serenity throughout the planning. Magic.&quot;">
                                 "Un sens du design extraordinaire, une coordination d'une précision chirurgicale, et
                                 pourtant, une douceur et une sérénité rassurantes tout au long de la planification.
                                 Magique."
@@ -525,6 +536,7 @@
                                     <i data-lucide="star"></i>
                                     <i data-lucide="star"></i>
                                 </div>
+                                <button class="review-video-badge" data-video="https://v1.pinimg.com/videos/mc/720p/02/09/6a/02096a17f7af8ba4ad68ac999a42dbf6.mp4" data-fr="▶ Témoignage Vidéo" data-en="▶ Video Story">▶ Témoignage Vidéo</button>
                             </div>
                         </div>
                     </div>
@@ -538,6 +550,11 @@
                     </button>
                 </div>
             </div>
+        </section>
+
+        <!-- 8.5 LUXURY ESTIMATOR SECTION -->
+        <section class="estimator-section">
+            <div class="container" id="luxury-estimator-container"></div>
         </section>
 
         <!-- 8. HIGH-END CTA SECTION -->
@@ -655,6 +672,11 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="js/flower_fall.js"></script>
     <script src="js/lang.js"></script>
+    <script src="js/estimator.js"></script>
+    <script src="js/beforeAfter.js"></script>
+    <script src="js/vipBooking.js"></script>
+    <script src="js/soundscape.js"></script>
+    <script src="js/videoReviews.js"></script>
     <script src="js/heroFallback.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/tracking.js"></script>

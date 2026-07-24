@@ -1,0 +1,229 @@
+/* ═══════════════════════════════════════════════════════════
+   Ever After Events — VIP Booking Modal (CSS)
+   Instant Private Consultation Scheduler
+   ═══════════════════════════════════════════════════════════ */
+
+.vip-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 9990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.vip-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.vip-modal-card {
+    background: var(--color-bg-light, #FDFBF7);
+    border: 1px solid var(--color-gold, #C5A880);
+    border-radius: 24px;
+    max-width: 680px;
+    width: 100%;
+    padding: 3rem;
+    position: relative;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+    transform: translateY(20px);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.vip-modal-overlay.active .vip-modal-card {
+    transform: translateY(0);
+}
+
+.vip-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(197, 168, 128, 0.1);
+    border: 1px solid var(--color-border, rgba(197, 168, 128, 0.3));
+    color: var(--color-dark, #111);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vip-modal-close:hover {
+    background: var(--color-gold, #C5A880);
+    color: #fff;
+}
+
+/* Modal Title */
+.vip-modal-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vip-modal-title {
+    font-family: var(--font-serif, serif);
+    font-size: 2rem;
+    color: var(--color-dark, #111);
+    margin-bottom: 0.5rem;
+}
+
+/* Slots Selection */
+.vip-section-label {
+    font-family: var(--font-sans, sans-serif);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-gold, #C5A880);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.vip-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.vip-slot-btn {
+    background: #fff;
+    border: 1.5px solid var(--color-border, rgba(197, 168, 128, 0.25));
+    border-radius: 12px;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-dark, #111);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vip-slot-btn:hover {
+    border-color: var(--color-gold, #C5A880);
+    transform: translateY(-2px);
+}
+
+.vip-slot-btn.selected {
+    background: var(--color-gold, #C5A880);
+    color: #fff;
+    border-color: var(--color-gold, #C5A880);
+    box-shadow: 0 8px 16px rgba(197, 168, 128, 0.3);
+}
+
+/* Consultation Mode */
+.vip-mode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.vip-mode-card {
+    background: #fff;
+    border: 1.5px solid var(--color-border, rgba(197, 168, 128, 0.25));
+    border-radius: 12px;
+    padding: 1rem 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vip-mode-card:hover, .vip-mode-card.selected {
+    border-color: var(--color-gold, #C5A880);
+    background: rgba(197, 168, 128, 0.08);
+}
+
+.vip-mode-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.vip-mode-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-dark, #111);
+}
+
+/* Input Fields */
+.vip-form-group {
+    margin-bottom: 1.25rem;
+}
+
+.vip-input {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border, rgba(197, 168, 128, 0.3));
+    background: #fff;
+    font-family: var(--font-sans, sans-serif);
+    font-size: 0.9rem;
+    color: var(--color-dark, #111);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.vip-input:focus {
+    border-color: var(--color-gold, #C5A880);
+}
+
+.vip-submit-btn {
+    width: 100%;
+    padding: 1.1rem;
+    background: var(--color-gold, #C5A880);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--font-sans, sans-serif);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.vip-submit-btn:hover {
+    background: #b3946a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(197, 168, 128, 0.3);
+}
+
+/* Success State */
+.vip-success-message {
+    text-align: center;
+    padding: 2rem 0;
+    display: none;
+}
+
+.vip-success-icon {
+    font-size: 3.5rem;
+    color: var(--color-gold, #C5A880);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .vip-modal-card {
+        padding: 2rem 1.25rem;
+    }
+    .vip-mode-grid {
+        grid-template-columns: 1fr;
+    }
+}

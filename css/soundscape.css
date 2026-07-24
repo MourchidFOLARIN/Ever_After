@@ -1,0 +1,105 @@
+/* ═══════════════════════════════════════════════════════════
+   Ever After Events — Luxury Soundscape Player (CSS)
+   Discreet Audio Experience Widget
+   ═══════════════════════════════════════════════════════════ */
+
+.soundscape-widget {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 9980;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(17, 17, 17, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 135, 0.3);
+    padding: 0.5rem 1.25rem 0.5rem 0.65rem;
+    border-radius: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.soundscape-widget:hover {
+    background: rgba(17, 17, 17, 0.9);
+    border-color: var(--color-gold, #C5A880);
+    transform: translateY(-2px);
+}
+
+/* Play/Pause Button */
+.soundscape-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-gold, #C5A880);
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.soundscape-widget:hover .soundscape-btn {
+    transform: scale(1.08);
+}
+
+/* Equalizer Animated Bars */
+.soundscape-eq {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 16px;
+}
+
+.soundscape-eq span {
+    width: 2px;
+    background: var(--color-gold, #C5A880);
+    height: 4px;
+    border-radius: 1px;
+    transition: height 0.2s ease;
+}
+
+.soundscape-widget.playing .soundscape-eq span:nth-child(1) {
+    animation: eqBar 1.2s infinite ease-in-out alternate;
+}
+.soundscape-widget.playing .soundscape-eq span:nth-child(2) {
+    animation: eqBar 0.9s infinite ease-in-out 0.2s alternate;
+}
+.soundscape-widget.playing .soundscape-eq span:nth-child(3) {
+    animation: eqBar 1.4s infinite ease-in-out 0.4s alternate;
+}
+.soundscape-widget.playing .soundscape-eq span:nth-child(4) {
+    animation: eqBar 0.8s infinite ease-in-out 0.1s alternate;
+}
+
+@keyframes eqBar {
+    0% { height: 4px; }
+    100% { height: 16px; }
+}
+
+.soundscape-text {
+    font-family: var(--font-sans, sans-serif);
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+    .soundscape-widget {
+        bottom: 5.5rem;
+        left: 1.25rem;
+        padding: 0.4rem 1rem 0.4rem 0.5rem;
+    }
+    .soundscape-text {
+        font-size: 0.65rem;
+    }
+}

@@ -1008,18 +1008,77 @@
 }
 
 @media (max-width: 768px) {
+    /* Subpage Hero & Background Image Optimization */
+    .subpage-hero {
+        height: auto !important;
+        min-height: 52vh;
+        padding: 7.5rem 1.25rem 3.5rem;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subpage-hero .container {
+        margin-top: 0;
+        padding: 0 1rem;
+    }
+
+    .subpage-hero h1 {
+        font-size: clamp(2rem, 7.5vw, 3.2rem) !important;
+        line-height: 1.15;
+    }
+
+    .subpage-hero-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 0.5rem;
+    }
+
+    /* Editorial Grid Responsive Chronology */
     .editorial-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2.5rem;
+    }
+
+    .editorial-img-wrapper,
+    .editorial-content-block {
+        order: 0 !important;
+        width: 100%;
+    }
+
+    .editorial-img-wrapper {
+        aspect-ratio: 16 / 11;
+        border-radius: 12px;
+    }
+
+    .editorial-content-block h3 {
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+
+    .editorial-content-block p {
+        font-size: 0.98rem;
+        line-height: 1.65;
+        margin-bottom: 1.5rem;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-card-content {
+        padding: 1.75rem 1.25rem;
     }
 
     .masonry-grid {
         grid-template-columns: 1fr;
-        grid-auto-rows: 300px;
+        grid-auto-rows: 280px;
+        gap: 1rem;
     }
 
     .gallery-item.size-medium,
@@ -1029,15 +1088,22 @@
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem 1.5rem;
+        gap: 2.5rem 1rem;
     }
 
     .stat-item {
         border-right: none;
     }
 
+    .contact-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
     .rsvp-form-container {
-        padding: 2rem;
+        padding: 2rem 1.25rem;
+        border-radius: 16px;
     }
 
     .rsvp-form {
@@ -1048,9 +1114,14 @@
         grid-column: span 1;
     }
 
+    .styled-map-container {
+        height: 320px !important;
+        margin-top: 4rem !important;
+    }
+
     .brand-statement-text {
-        font-size: clamp(1.6rem, 6vw, 2.2rem);
-        line-height: 1.4;
+        font-size: clamp(1.5rem, 5.5vw, 2rem);
+        line-height: 1.45;
     }
 
     /* Mobile First Viewport (Hero Section) Layout Optimization */

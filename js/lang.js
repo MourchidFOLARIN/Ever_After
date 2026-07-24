@@ -3,8 +3,17 @@ function applyLanguage(lang) {
     document.querySelectorAll('[data-fr][data-en]').forEach(el => {
         const translation = el.getAttribute(`data-${lang}`);
         if (translation !== null) {
-            // If the element has kids but we just want to replace text, or if it is purely text
-            if (el.children.length === 0) {
+            // Check if element was processed by split-word reveal animation
+            if (el.querySelector('.reveal-wrapper')) {
+                const words = translation.trim().split(/\s+/);
+                el.innerHTML = words.map(word => {
+                    return `<span class="reveal-wrapper" style="display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.1em;">
+                        <span class="reveal-inner" style="display: inline-block; will-change: transform, opacity; transform: translateY(0%); opacity: 1;">
+                            ${word}&nbsp;
+                        </span>
+                    </span>`;
+                }).join('');
+            } else if (el.children.length === 0) {
                 el.textContent = translation;
             } else {
                 // Try to update only the text node if possible, or support basic html

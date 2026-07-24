@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             send: "Envoyer",
             keywords: [
                 {
-                    keys: ['bonjour', 'salut', 'hello', 'coucou', 'comment va tu'],
+                    keys: ['bonjour', 'cc', 'salut', 'hello', 'coucou', 'comment va tu'],
                     reply: "Bonjour ! Vous êtes au bon endroit. Ever After est le choix idéal pour un mariage exceptionnel et inoubliable. En quoi puis-je vous être utile aujourd'hui ? ☀️"
                 },
                 {
