@@ -226,8 +226,30 @@ header.site-header.scrolled {
 }
 
 .mobile-nav-cta {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 0.9rem;
+}
+
+.mobile-nav-list #langToggleMobile {
+    margin-top: 0.5rem;
+    padding: 0.65rem 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--color-dark);
+    border: 1.5px solid var(--color-gold);
+    border-radius: 30px;
+    background: rgba(197, 160, 89, 0.12);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav-list #langToggleMobile:hover {
+    background: var(--color-gold);
+    color: var(--color-bg-light);
 }
 
 .mobile-nav-link:hover {
