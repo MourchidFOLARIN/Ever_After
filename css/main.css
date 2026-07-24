@@ -2,17 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* Color Palette */
+    /* Enhanced Luxury Color Palette */
     --color-bg-light: #FDFBF7;
     --color-bg-beige: #F4EFEA;
     --color-bg-rose: #F9EFE9;
-    --color-gold: #C5A880;
-    --color-gold-hover: #B59870;
-    --color-gold-light: #E7DFD5;
-    --color-dark: #111111;
-    --color-dark-light: #2D2D2D;
-    --color-gray: #767676;
-    --color-border: rgba(197, 168, 128, 0.2);
+    --color-gold: #C5A059;
+    --color-gold-hover: #D4AF37;
+    --color-gold-light: #F3E9D9;
+    --color-dark: #141312;
+    --color-dark-light: #2A2725;
+    --color-gray: #4E4A46;
+    --color-border: rgba(197, 160, 89, 0.22);
+    --color-gold-gradient: linear-gradient(135deg, #E5C378 0%, #C5A059 50%, #9E792F 100%);
 
     /* Typography */
     --font-serif: 'Cormorant Garamond', serif;
@@ -24,6 +25,12 @@
 
     /* Spacing */
     --container-padding: 8vw;
+}
+
+/* Text Selection Styling */
+::selection {
+    background-color: var(--color-gold);
+    color: #FFFFFF;
 }
 
 /* Reset & Core Setup */
@@ -45,9 +52,10 @@ html {
 body {
     font-family: var(--font-sans);
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.65;
     overflow-x: hidden;
     background-color: var(--color-bg-light);
+    color: var(--color-dark);
 }
 
 /* Custom Scrollbar for Luxury Aesthetics */
@@ -84,9 +92,10 @@ h4,
 h5,
 h6 {
     font-family: var(--font-serif);
-    font-weight: 300;
-    line-height: 1.1;
+    font-weight: 400;
+    line-height: 1.15;
     color: var(--color-dark);
+    letter-spacing: -0.01em;
 }
 
 p {
@@ -107,13 +116,14 @@ video {
     display: block;
 }
 
-/* Global Luxury Elements */
+/* Global Luxury Elements & Metallic Text Accents */
 .editorial-title {
     font-size: clamp(2.5rem, 5vw, 5.5rem);
     font-weight: 300;
     text-align: center;
     letter-spacing: -0.02em;
     margin-bottom: 2rem;
+    color: var(--color-dark);
 }
 
 .editorial-subtitle {
@@ -121,10 +131,19 @@ video {
     font-size: clamp(0.75rem, 1vw, 0.9rem);
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    color: var(--color-gold);
+    background: var(--color-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    display: block;
+}
+
+.text-gold-gradient {
+    background: var(--color-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Button & Link Styling */
@@ -247,30 +266,4 @@ section {
 /* Curseur fleur personnalisé */
 body {
     cursor: url('../images/flower_cursor2.png'), auto;
-}
-
-/* Jury Access Floating Button */
-#jury-link {
-    position: fixed;
-    bottom: 28px;
-    left: 28px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: var(--color-dark);
-    color: var(--color-gold);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    z-index: 10000;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-}
-
-#jury-link:hover {
-    transform: scale(1.08);
-    background: var(--color-gold);
-    color: var(--color-dark);
-    box-shadow: 0 6px 28px rgba(197, 168, 128, 0.5);
 }

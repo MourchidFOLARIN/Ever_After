@@ -29,6 +29,12 @@
         content="Ever After Events orchestre vos mariages de prestige et réceptions haut de gamme.">
     <meta property="twitter:image" content="images/hero_fallback.png">
 
+    <!-- Video & Asset Performance Optimization -->
+    <link rel="preconnect" href="https://v1.pinterest.com" crossorigin>
+    <link rel="dns-prefetch" href="https://v1.pinterest.com">
+    <link rel="preload" as="image" href="images/hero_fallback.png">
+    <link rel="preload" as="video" href="https://v1.pinterest.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4" type="video/mp4">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -130,8 +136,8 @@
         <section class="hero-section" aria-label="Présentation cinématique">
             <div class="hero-video-container">
                 <!-- Hero: Ultra-romantic wedding reception (Royal Luxury Events) -->
-                <video autoplay muted loop playsinline
-                    poster="https://i.pinimg.com/736x/ff/8e/a3/ff8ea311d7c9a81014f3ec97b24a2b2d.jpg" id="heroVideo">
+                <video autoplay muted loop playsinline preload="auto"
+                    poster="images/hero_fallback.png" id="heroVideo">
                     <source
                         src="https://v1.pinimg.com/videos/iht/expMp4/8d/db/a4/8ddba44943a92792f645bde6e4670ed0_720w.mp4"
                         type="video/mp4">
@@ -630,10 +636,7 @@
         </div>
     </footer>
 
-    <!-- Jury Access Link -->
-    <a href="jury.html" id="jury-link" aria-label="Accès Espace Jury" title="Espace Jury">
-        <i data-lucide="gavel"></i>
-    </a>
+    
 
     <!-- Chatbot placeholder -->
     <div id="chatbot-container"></div>

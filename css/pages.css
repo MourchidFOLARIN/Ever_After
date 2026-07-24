@@ -287,9 +287,12 @@
 .stat-number {
     font-family: var(--font-serif);
     font-size: clamp(2.5rem, 4vw, 4.5rem);
-    color: var(--color-dark);
+    background: var(--color-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 1;
     margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 .stat-label {
@@ -297,8 +300,8 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    color: var(--color-gold);
-    font-weight: 500;
+    color: var(--color-dark);
+    font-weight: 600;
 }
 
 /* ----------------------------------------------------
