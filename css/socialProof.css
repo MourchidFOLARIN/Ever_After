@@ -1,0 +1,75 @@
+/* ═══════════════════════════════════════════════════════════
+   Ever After Events — Social Proof Notification (CSS)
+   Discreet Luxury Toast Notification
+   ═══════════════════════════════════════════════════════════ */
+
+.social-proof-toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9970;
+    background: rgba(253, 251, 247, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-gold, #C5A880);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    max-width: 340px;
+    box-shadow: 0 15px 35px rgba(17, 17, 17, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-proof-toast.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.social-proof-icon {
+    font-size: 1.6rem;
+    color: var(--color-gold, #C5A880);
+    flex-shrink: 0;
+}
+
+.social-proof-content p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--color-dark, #111);
+    line-height: 1.4;
+}
+
+.social-proof-time {
+    font-size: 0.7rem;
+    color: var(--color-gold, #C5A880);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.social-proof-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: var(--color-gray, #888);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .social-proof-toast {
+        bottom: 5.5rem;
+        right: 1.25rem;
+        left: 1.25rem;
+        max-width: none;
+    }
+}

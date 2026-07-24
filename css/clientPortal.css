@@ -1,0 +1,107 @@
+/* ═══════════════════════════════════════════════════════════
+   Ever After Events — Client VIP Portal Modal (CSS)
+   Bespoke Client Space Login & Dashboard Preview
+   ═══════════════════════════════════════════════════════════ */
+
+.portal-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 9992;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.portal-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portal-modal-card {
+    background: var(--color-bg-light, #FDFBF7);
+    border: 1px solid var(--color-gold, #C5A880);
+    border-radius: 24px;
+    max-width: 580px;
+    width: 100%;
+    padding: 3rem;
+    position: relative;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+    transform: translateY(20px);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portal-modal-overlay.active .portal-modal-card {
+    transform: translateY(0);
+}
+
+.portal-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(197, 168, 128, 0.1);
+    border: 1px solid var(--color-border, rgba(197, 168, 128, 0.3));
+    color: var(--color-dark, #111);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Dashboard View inside Modal */
+.portal-dashboard-view {
+    display: none;
+    text-align: center;
+}
+
+.portal-dashboard-view.active {
+    display: block;
+}
+
+.portal-stat-badge {
+    background: rgba(197, 168, 128, 0.1);
+    border: 1px solid var(--color-gold, #C5A880);
+    color: var(--color-gold, #C5A880);
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.portal-timeline-list {
+    text-align: left;
+    list-style: none;
+    margin: 1.5rem 0 2rem;
+    padding: 0;
+}
+
+.portal-timeline-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border, rgba(197, 168, 128, 0.2));
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .portal-modal-card {
+        padding: 2rem 1.25rem;
+    }
+}

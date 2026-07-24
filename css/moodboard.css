@@ -1,0 +1,114 @@
+/* ═══════════════════════════════════════════════════════════
+   Ever After Events — Moodboard Creator (CSS)
+   Bespoke Interactive Palette & Inspiration Generator
+   ═══════════════════════════════════════════════════════════ */
+
+.moodboard-section {
+    background-color: var(--color-bg-beige, #F9F6F0);
+    padding: 8rem 0;
+    position: relative;
+}
+
+.moodboard-card {
+    background: rgba(253, 251, 247, 0.95);
+    border: 1px solid var(--color-border, rgba(197, 168, 128, 0.3));
+    border-radius: 24px;
+    padding: 3.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 30px 60px rgba(17, 17, 17, 0.04);
+}
+
+.mood-palettes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mood-palette-card {
+    background: #fff;
+    border: 1.5px solid var(--color-border, rgba(197, 168, 128, 0.25));
+    border-radius: 16px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    text-align: center;
+}
+
+.mood-palette-card:hover {
+    border-color: var(--color-gold, #C5A880);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(197, 168, 128, 0.12);
+}
+
+.mood-palette-card.selected {
+    border-color: var(--color-gold, #C5A880);
+    background: rgba(197, 168, 128, 0.05);
+    box-shadow: 0 10px 25px rgba(197, 168, 128, 0.15);
+}
+
+/* Color Swatches Bar */
+.mood-swatches {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.mood-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Result Moodboard Grid */
+.moodboard-result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--color-border, rgba(197, 168, 128, 0.25));
+    padding-top: 2.5rem;
+    display: none;
+    animation: mbFade 0.5s ease forwards;
+}
+
+.moodboard-result-grid.active {
+    display: grid;
+}
+
+@keyframes mbFade {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mb-item {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.mb-item:hover img {
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    .moodboard-card {
+        padding: 2rem 1.25rem;
+    }
+    .moodboard-result-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
